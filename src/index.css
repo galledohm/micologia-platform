@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --color-forest: #2d5a27;
+  --color-moss: #4a7c59;
+  --color-sage: #87a878;
+  --color-cream: #f5f0e8;
+  --color-earth: #8b5e3c;
+  --color-mushroom: #c4956a;
+  --color-spore: #d4c5a9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-cream);
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Poppins', sans-serif;
+}
+
+.badge-comestible { background-color: #d1fae5; color: #065f46; }
+.badge-toxica { background-color: #fee2e2; color: #991b1b; }
+.badge-sin-valor { background-color: #f3f4f6; color: #374151; }
+.badge-doble-prep { background-color: #fef3c7; color: #92400e; }
+
+.badge-saprobia { background-color: #dbeafe; color: #1e40af; }
+.badge-micorricica { background-color: #ede9fe; color: #5b21b6; }
+.badge-parasita { background-color: #ffe4e6; color: #9f1239; }
+.badge-saprosimbiota { background-color: #ecfdf5; color: #065f46; }
+
+.progress-bar {
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-forest), var(--color-sage));
+  border-radius: 9999px;
+  transition: width 0.4s ease;
+}
+
+.option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.option-btn:hover:not(:disabled) {
+  border-color: var(--color-moss);
+  background-color: #f0f7f0;
+}
+
+.option-btn.selected {
+  border-color: var(--color-forest);
+  background-color: #e8f5e9;
+}
+
+.btn-primary {
+  background-color: var(--color-forest);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover { background-color: var(--color-moss); transform: translateY(-1px); }
+.btn-primary:active { transform: translateY(0); }
+.btn-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-forest);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  border: 2px solid var(--color-forest);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-secondary:hover { background-color: var(--color-forest); color: white; }
+.btn-secondary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+}

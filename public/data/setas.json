@@ -1,0 +1,104 @@
+{
+  "setas": [
+    {
+      "id": "seta_001",
+      "nombreCientifico": "Amanita muscaria",
+      "nombreComun": "Agárico",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/800px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg",
+      "comestibilidad": "toxica",
+      "nutricion": "micorricica",
+      "tema": "Amanitaceae",
+      "descripcion": "Seta muy característica por su sombrero rojo con manchas blancas."
+    },
+    {
+      "id": "seta_002",
+      "nombreCientifico": "Boletus edulis",
+      "nombreComun": "Boleto comestible / Porcini",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Edible_Bolete.jpg/800px-Edible_Bolete.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Boletaceae",
+      "descripcion": "Uno de los hongos comestibles más apreciados en gastronomía."
+    },
+    {
+      "id": "seta_003",
+      "nombreCientifico": "Cantharellus cibarius",
+      "nombreComun": "Rebozuelo / Chantarela",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cantharellus_cibarius_2013_G2.jpg/800px-Cantharellus_cibarius_2013_G2.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Cantharellaceae",
+      "descripcion": "Seta de color amarillo-anaranjado con pseudo-láminas ramificadas."
+    },
+    {
+      "id": "seta_004",
+      "nombreCientifico": "Amanita phalloides",
+      "nombreComun": "Oronja verde / Cicuta verde",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Amanita_phalloides_1.JPG/800px-Amanita_phalloides_1.JPG",
+      "comestibilidad": "toxica",
+      "nutricion": "micorricica",
+      "tema": "Amanitaceae",
+      "descripcion": "El hongo más venenoso del mundo. Responsable de la mayoría de las muertes por intoxicación fúngica."
+    },
+    {
+      "id": "seta_005",
+      "nombreCientifico": "Pleurotus ostreatus",
+      "nombreComun": "Seta de ostra",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Oyster_mushrooms_%28Pleurotus_ostreatus%29.jpg/800px-Oyster_mushrooms_%28Pleurotus_ostreatus%29.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "saprobia",
+      "tema": "Pleurotaceae",
+      "descripcion": "Crece en madera muerta o debilitada. Ampliamente cultivada para consumo."
+    },
+    {
+      "id": "seta_006",
+      "nombreCientifico": "Lactarius deliciosus",
+      "nombreComun": "Níscalo / Rovellón",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lactarius_deliciosus_LC0306.jpg/800px-Lactarius_deliciosus_LC0306.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Russulaceae",
+      "descripcion": "Exuda látex de color anaranjado al corte. Muy apreciado en la gastronomía mediterránea."
+    },
+    {
+      "id": "seta_007",
+      "nombreCientifico": "Armillaria mellea",
+      "nombreComun": "Seta de miel",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Honey_fungus_%28Armillaria_mellea%29.jpg/800px-Honey_fungus_%28Armillaria_mellea%29.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "parasita-facultativa",
+      "tema": "Physalacriaceae",
+      "descripcion": "Puede parasitar árboles vivos y también crecer sobre madera muerta."
+    },
+    {
+      "id": "seta_008",
+      "nombreCientifico": "Morchella esculenta",
+      "nombreComun": "Colmenilla",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Morchella_esculenta_-_Morille_comestible.jpg/800px-Morchella_esculenta_-_Morille_comestible.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprosimbiota",
+      "tema": "Morchellaceae",
+      "descripcion": "Seta de primavera con aspecto de panal de abejas. Tóxica en crudo."
+    },
+    {
+      "id": "seta_009",
+      "nombreCientifico": "Trametes versicolor",
+      "nombreComun": "Cola de pavo",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Trametes_versicolor_-_Lindsey.jpg/800px-Trametes_versicolor_-_Lindsey.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Polyporaceae",
+      "descripcion": "Hongo políporo muy común sobre madera. Sin valor culinario pero con usos medicinales."
+    },
+    {
+      "id": "seta_010",
+      "nombreCientifico": "Macrolepiota procera",
+      "nombreComun": "Parasol / Galamperna",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Macrolepiota_procera_2010_G1.jpg/800px-Macrolepiota_procera_2010_G1.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "saprobia",
+      "tema": "Agaricaceae",
+      "descripcion": "Seta de gran tamaño con sombrero en forma de paraguas. Muy apreciada."
+    }
+  ]
+}

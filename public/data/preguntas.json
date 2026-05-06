@@ -1,0 +1,264 @@
+{
+  "preguntas": [
+    {
+      "id": "preg_001",
+      "texto": "¿Qué tipo de espora produce Amanita muscaria?",
+      "opciones": [
+        { "id": "a", "texto": "Ascosporas" },
+        { "id": "b", "texto": "Basidiosporas" },
+        { "id": "c", "texto": "Conidios" },
+        { "id": "d", "texto": "Zigosporas" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Reproducción fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_002",
+      "texto": "¿Cuál de las siguientes toxinas es la principal responsable de la mortalidad por Amanita phalloides?",
+      "opciones": [
+        { "id": "a", "texto": "Muscarina" },
+        { "id": "b", "texto": "Ibotenico" },
+        { "id": "c", "texto": "Amatoxinas (alfa-amanitina)" },
+        { "id": "d", "texto": "Orellanina" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Toxicología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_003",
+      "texto": "¿Cómo se denomina la relación simbiótica entre el hongo y la raíz de una planta?",
+      "opciones": [
+        { "id": "a", "texto": "Liquen" },
+        { "id": "b", "texto": "Micorriza" },
+        { "id": "c", "texto": "Endofitismo" },
+        { "id": "d", "texto": "Parasitismo" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Ecología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_004",
+      "texto": "¿A qué división pertenecen las setas con hifas septadas y basidios?",
+      "opciones": [
+        { "id": "a", "texto": "Ascomycota" },
+        { "id": "b", "texto": "Zygomycota" },
+        { "id": "c", "texto": "Basidiomycota" },
+        { "id": "d", "texto": "Chytridiomycota" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Taxonomía fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_005",
+      "texto": "¿Cuál es la función principal del micelio en un hongo?",
+      "opciones": [
+        { "id": "a", "texto": "Reproducción sexual" },
+        { "id": "b", "texto": "Fotosíntesis" },
+        { "id": "c", "texto": "Absorción de nutrientes y crecimiento vegetativo" },
+        { "id": "d", "texto": "Producción de esporas" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Morfología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_006",
+      "texto": "¿Qué estructura caracteriza al género Boletus frente a otros Agáricos?",
+      "opciones": [
+        { "id": "a", "texto": "Láminas bajo el sombrero" },
+        { "id": "b", "texto": "Tubos y poros bajo el sombrero" },
+        { "id": "c", "texto": "Aguijones o espinas" },
+        { "id": "d", "texto": "Pliegues o falsas láminas" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Morfología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_007",
+      "texto": "¿Qué compuesto da el color naranja al látex de Lactarius deliciosus?",
+      "opciones": [
+        { "id": "a", "texto": "Clorofila" },
+        { "id": "b", "texto": "Carotenoides (azuleno-derivados)" },
+        { "id": "c", "texto": "Antocianinas" },
+        { "id": "d", "texto": "Melaninas" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Bioquímica fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_008",
+      "texto": "¿Cuál es el principal componente de la pared celular de los hongos?",
+      "opciones": [
+        { "id": "a", "texto": "Celulosa" },
+        { "id": "b", "texto": "Pectina" },
+        { "id": "c", "texto": "Quitina" },
+        { "id": "d", "texto": "Peptidoglicano" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Bioquímica fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_009",
+      "texto": "¿Cuál de las siguientes especies es un ascomiceto?",
+      "opciones": [
+        { "id": "a", "texto": "Amanita muscaria" },
+        { "id": "b", "texto": "Boletus edulis" },
+        { "id": "c", "texto": "Morchella esculenta" },
+        { "id": "d", "texto": "Cantharellus cibarius" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Taxonomía fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_010",
+      "texto": "¿Qué tipo de nutrición tiene Trametes versicolor?",
+      "opciones": [
+        { "id": "a", "texto": "Micorrícica" },
+        { "id": "b", "texto": "Parásita" },
+        { "id": "c", "texto": "Saprobia" },
+        { "id": "d", "texto": "Fotosintética" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Ecología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_011",
+      "texto": "¿Qué es el carpóforo?",
+      "opciones": [
+        { "id": "a", "texto": "El conjunto de hifas que forman el micelio" },
+        { "id": "b", "texto": "El cuerpo fructífero visible del hongo" },
+        { "id": "c", "texto": "El órgano de reproducción asexual" },
+        { "id": "d", "texto": "La parte subterránea del hongo" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Morfología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_012",
+      "texto": "¿En qué época del año es más habitual encontrar Morchella esculenta?",
+      "opciones": [
+        { "id": "a", "texto": "Verano" },
+        { "id": "b", "texto": "Otoño" },
+        { "id": "c", "texto": "Invierno" },
+        { "id": "d", "texto": "Primavera" }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Ecología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_013",
+      "texto": "¿Cuál de los siguientes géneros contiene la volva (saco basal)?",
+      "opciones": [
+        { "id": "a", "texto": "Boletus" },
+        { "id": "b", "texto": "Amanita" },
+        { "id": "c", "texto": "Cantharellus" },
+        { "id": "d", "texto": "Pleurotus" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Morfología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_014",
+      "texto": "¿Qué diferencia a los Basidiomycota de los Ascomycota en cuanto a reproducción sexual?",
+      "opciones": [
+        { "id": "a", "texto": "Los Basidiomycota producen esporas en ascos" },
+        { "id": "b", "texto": "Los Basidiomycota producen esporas en basidios externos" },
+        { "id": "c", "texto": "Los Ascomycota no tienen reproducción sexual" },
+        { "id": "d", "texto": "No existe diferencia estructural" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Reproducción fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_015",
+      "texto": "¿Cuál es la intoxicación más grave que puede producir Armillaria mellea si se consume cruda?",
+      "opciones": [
+        { "id": "a", "texto": "Síndrome muscarínico" },
+        { "id": "b", "texto": "Síndrome gastrointestinal" },
+        { "id": "c", "texto": "Síndrome faloidiano" },
+        { "id": "d", "texto": "Síndrome alucinógeno" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Toxicología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_016",
+      "texto": "¿Qué término describe a hongos que viven sobre materia orgánica muerta en descomposición?",
+      "opciones": [
+        { "id": "a", "texto": "Simbiontes" },
+        { "id": "b", "texto": "Parásitos" },
+        { "id": "c", "texto": "Saprobios" },
+        { "id": "d", "texto": "Mutualistas" }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Ecología fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_017",
+      "texto": "¿Cuál es la especie de Pleurotus más cultivada industrialmente?",
+      "opciones": [
+        { "id": "a", "texto": "Pleurotus eryngii" },
+        { "id": "b", "texto": "Pleurotus ostreatus" },
+        { "id": "c", "texto": "Pleurotus cornucopiae" },
+        { "id": "d", "texto": "Pleurotus djamor" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Micología aplicada",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_018",
+      "texto": "¿Qué se entiende por 'doble preparación' en micología culinaria?",
+      "opciones": [
+        { "id": "a", "texto": "Cocinar dos veces a alta temperatura para reducir toxinas" },
+        { "id": "b", "texto": "Hervir, desechar el agua y luego cocinar de nuevo" },
+        { "id": "c", "texto": "Marinar y luego saltear" },
+        { "id": "d", "texto": "Secar y luego rehidratar" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Gastronomía y seguridad",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_019",
+      "texto": "¿Cuál es la estructura reproductora de los Ascomycota?",
+      "opciones": [
+        { "id": "a", "texto": "Basidio" },
+        { "id": "b", "texto": "Asca" },
+        { "id": "c", "texto": "Cleistotecio" },
+        { "id": "d", "texto": "Peritecio" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Reproducción fúngica",
+      "fuente": "demo"
+    },
+    {
+      "id": "preg_020",
+      "texto": "¿Qué tipo de micorriza forman la mayoría de los árboles forestales con hongos como Boletus?",
+      "opciones": [
+        { "id": "a", "texto": "Endomicorriza arbuscular" },
+        { "id": "b", "texto": "Ectomicorriza" },
+        { "id": "c", "texto": "Ericoides" },
+        { "id": "d", "texto": "Orquideoides" }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Ecología fúngica",
+      "fuente": "demo"
+    }
+  ]
+}
