@@ -2,103 +2,193 @@
   "setas": [
     {
       "id": "seta_001",
-      "nombreCientifico": "Amanita muscaria",
-      "nombreComun": "Agárico",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/800px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg",
-      "comestibilidad": "toxica",
-      "nutricion": "micorricica",
-      "tema": "Amanitaceae",
-      "descripcion": "Seta muy característica por su sombrero rojo con manchas blancas."
+      "nombreCientifico": "Geastrum pectinatum",
+      "nombreComun": "Estrella de tierra",
+      "imagenUrl": "https://2.bp.blogspot.com/-A9xYw0IJiv0/Ucq3Pgmnt3I/AAAAAAAAJFc/u5LB851EP8E/s1600/beaked_earthstar.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Corumela (cuello) muy marcada y peristoma estriado/surcado. Lacinia (hojas)."
     },
     {
       "id": "seta_002",
-      "nombreCientifico": "Boletus edulis",
-      "nombreComun": "Boleto comestible / Porcini",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Edible_Bolete.jpg/800px-Edible_Bolete.jpg",
-      "comestibilidad": "comestible",
-      "nutricion": "micorricica",
-      "tema": "Boletaceae",
-      "descripcion": "Uno de los hongos comestibles más apreciados en gastronomía."
+      "nombreCientifico": "Myriostoma coliforme",
+      "nombreComun": "Salero",
+      "imagenUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/60488852/medium.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobio no comestible."
     },
     {
       "id": "seta_003",
-      "nombreCientifico": "Cantharellus cibarius",
-      "nombreComun": "Rebozuelo / Chantarela",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Cantharellus_cibarius_2013_G2.jpg/800px-Cantharellus_cibarius_2013_G2.jpg",
-      "comestibilidad": "comestible",
-      "nutricion": "micorricica",
-      "tema": "Cantharellaceae",
-      "descripcion": "Seta de color amarillo-anaranjado con pseudo-láminas ramificadas."
+      "nombreCientifico": "Morchella elata",
+      "nombreComun": "Colmenilla negra",
+      "imagenUrl": "https://www.first-nature.com/fungi/images/ascomycetes/morchella-elata1.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Comestible previo doble tratamiento."
     },
     {
       "id": "seta_004",
-      "nombreCientifico": "Amanita phalloides",
-      "nombreComun": "Oronja verde / Cicuta verde",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Amanita_phalloides_1.JPG/800px-Amanita_phalloides_1.JPG",
-      "comestibilidad": "toxica",
-      "nutricion": "micorricica",
-      "tema": "Amanitaceae",
-      "descripcion": "El hongo más venenoso del mundo. Responsable de la mayoría de las muertes por intoxicación fúngica."
+      "nombreCientifico": "Morchella tridentina",
+      "nombreComun": "Morchella tridentina",
+      "imagenUrl": "https://picturemushroom.com/image-handle/image/1080/43B07C92C30047938068994EBECBD0F5.jpeg?x-oss-process=image/format,webp",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Saprosimbiótica, comestible previo doble tratamiento."
     },
     {
       "id": "seta_005",
-      "nombreCientifico": "Pleurotus ostreatus",
-      "nombreComun": "Seta de ostra",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Oyster_mushrooms_%28Pleurotus_ostreatus%29.jpg/800px-Oyster_mushrooms_%28Pleurotus_ostreatus%29.jpg",
-      "comestibilidad": "comestible",
-      "nutricion": "saprobia",
-      "tema": "Pleurotaceae",
-      "descripcion": "Crece en madera muerta o debilitada. Ampliamente cultivada para consumo."
+      "nombreCientifico": "Gyromitra esculenta",
+      "nombreComun": "Falsa colmenilla",
+      "imagenUrl": "https://a-z-animals.com/media/2022/09/gyromitra-esculenta-mushroom-in-spring-picture-id1372288695-1024x614.jpg",
+      "comestibilidad": "toxica",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Saprosimbiótica, tóxica."
     },
     {
       "id": "seta_006",
-      "nombreCientifico": "Lactarius deliciosus",
-      "nombreComun": "Níscalo / Rovellón",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lactarius_deliciosus_LC0306.jpg/800px-Lactarius_deliciosus_LC0306.jpg",
-      "comestibilidad": "comestible",
-      "nutricion": "micorricica",
-      "tema": "Russulaceae",
-      "descripcion": "Exuda látex de color anaranjado al corte. Muy apreciado en la gastronomía mediterránea."
+      "nombreCientifico": "Helvella monachella",
+      "nombreComun": "Helvella monachella (= H. leucopus)",
+      "imagenUrl": "https://www.centrodeestudiosmicologicosasturianos.org/wp-content/uploads/2022/04/Helvella-monachella.-La-Robla-Leon-22-IV-2016-Populus-sp..jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Pie liso. Todas las Helvellas salen asociadas a álamos o sauces."
     },
     {
       "id": "seta_007",
-      "nombreCientifico": "Armillaria mellea",
-      "nombreComun": "Seta de miel",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Honey_fungus_%28Armillaria_mellea%29.jpg/800px-Honey_fungus_%28Armillaria_mellea%29.jpg",
+      "nombreCientifico": "Helvella fusca",
+      "nombreComun": "Helvella fusca",
+      "imagenUrl": "https://micologica-barakaldo.org/wp-content/uploads/2019/03/Helvella-fusca_20130504_11630.jpg",
       "comestibilidad": "doble-preparacion",
-      "nutricion": "parasita-facultativa",
-      "tema": "Physalacriaceae",
-      "descripcion": "Puede parasitar árboles vivos y también crecer sobre madera muerta."
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Pie surcado y mitra por debajo surcada."
     },
     {
       "id": "seta_008",
-      "nombreCientifico": "Morchella esculenta",
-      "nombreComun": "Colmenilla",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Morchella_esculenta_-_Morille_comestible.jpg/800px-Morchella_esculenta_-_Morille_comestible.jpg",
+      "nombreCientifico": "Dissingia leucomelaena",
+      "nombreComun": "Puchero (Helvella)",
+      "imagenUrl": "https://www.salvatoresaitta.it/fungi/dissingialeucomelaena04.jpg",
       "comestibilidad": "doble-preparacion",
       "nutricion": "saprosimbiota",
-      "tema": "Morchellaceae",
-      "descripcion": "Seta de primavera con aspecto de panal de abejas. Tóxica en crudo."
+      "tema": "Curso micológico",
+      "descripcion": "Muy común en CLM. Pie rudimentario y un poco acostillado."
     },
     {
       "id": "seta_009",
-      "nombreCientifico": "Trametes versicolor",
-      "nombreComun": "Cola de pavo",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Trametes_versicolor_-_Lindsey.jpg/800px-Trametes_versicolor_-_Lindsey.jpg",
-      "comestibilidad": "sin-valor",
+      "nombreCientifico": "Calocybe gambosa",
+      "nombreComun": "Perrechico / Seta de San Jorge",
+      "imagenUrl": "https://www.mycodb.fr/photos/Calocybe_gambosa_2006_jd_1.jpg",
+      "comestibilidad": "comestible",
       "nutricion": "saprobia",
-      "tema": "Polyporaceae",
-      "descripcion": "Hongo políporo muy común sobre madera. Sin valor culinario pero con usos medicinales."
+      "tema": "Curso micológico",
+      "descripcion": "Saprobia, comestible."
     },
     {
       "id": "seta_010",
-      "nombreCientifico": "Macrolepiota procera",
-      "nombreComun": "Parasol / Galamperna",
-      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Macrolepiota_procera_2010_G1.jpg/800px-Macrolepiota_procera_2010_G1.jpg",
+      "nombreCientifico": "Marasmius oreades",
+      "nombreComun": "Senderuela",
+      "imagenUrl": "https://healing-mushrooms.net/wp-content/uploads/2020/02/Marasmius-oreades.jpg",
       "comestibilidad": "comestible",
       "nutricion": "saprobia",
-      "tema": "Agaricaceae",
-      "descripcion": "Seta de gran tamaño con sombrero en forma de paraguas. Muy apreciada."
+      "tema": "Curso micológico",
+      "descripcion": "Saprobia, comestible."
+    },
+    {
+      "id": "seta_011",
+      "nombreCientifico": "Agaricus crocodilinus",
+      "nombreComun": "Agaricus crocodilinus",
+      "imagenUrl": "https://micologica-barakaldo.org/wp-content/uploads/2017/11/Agaricus-crocodilinus_20030603003-600x453.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobia, comestible. Absorbe cadmio; se aconseja no realizar consumo continuado."
+    },
+    {
+      "id": "seta_012",
+      "nombreCientifico": "Hygrophorus marzuolus",
+      "nombreComun": "Seta de marzo",
+      "imagenUrl": "https://ultimate-mushroom.com/images/hygrophorus-marzuolus-1.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Micorrícica, comestible."
+    },
+    {
+      "id": "seta_013",
+      "nombreCientifico": "Schizophyllum commune",
+      "nombreComun": "Schizophyllum commune",
+      "imagenUrl": "https://www.mykoweb.com/CAF/photos/Schizophyllum_commune(mgw-02).jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásita facultativa, sin valor culinario."
+    },
+    {
+      "id": "seta_014",
+      "nombreCientifico": "Fomes inzengae",
+      "nombreComun": "Fomes inzengae",
+      "imagenUrl": "https://www.pharmanatur.com/Pagepolypore/Fomes%20inzengae%202.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásita facultativa, sin valor culinario."
+    },
+    {
+      "id": "seta_015",
+      "nombreCientifico": "Ganoderma lucidum",
+      "nombreComun": "Reishi",
+      "imagenUrl": "https://healing-mushrooms.net/wp-content/uploads/2020/05/Reishi-Mushroom.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásita facultativa, uso medicinal."
+    },
+    {
+      "id": "seta_016",
+      "nombreCientifico": "Phellinus pomaceus",
+      "nombreComun": "Phellinus pomaceus",
+      "imagenUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/5653065/medium.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásita facultativa, aparece sobre todo en Prunus. Puede mantener viva durante años a la especie parasitada."
+    },
+    {
+      "id": "seta_017",
+      "nombreCientifico": "Phellinus igniarius",
+      "nombreComun": "Phellinus igniarius",
+      "imagenUrl": "https://www.first-nature.com/fungi/images/hymenochaetaceae/phellinus-igniarius2.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásita de sauces."
+    },
+    {
+      "id": "seta_018",
+      "nombreCientifico": "Cryptodiscus pini",
+      "nombreComun": "Cryptodiscus pini",
+      "imagenUrl": "https://image.laji.fi/MM.2202224/Discostroma-pini-20220330.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobio, no comestible."
+    },
+    {
+      "id": "seta_019",
+      "nombreCientifico": "Auriscalpium vulgare",
+      "nombreComun": "Auriscalpium vulgare",
+      "imagenUrl": "https://www.centrodeestudiosmicologicosasturianos.org/wp-content/uploads/2020/10/Auriscalpium-vulgare.-Villar%C3%ADn-Somiedo-8-III-2008-estr%C3%B3bilos-de-Pinus-sylvestris.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobio, no comestible."
     }
   ]
 }
