@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   ArrowLeft, Plus, Trash2, Upload, RefreshCw, AlertCircle,
-  CheckCircle, Download, FileText,
+  CheckCircle, Download, FileText, Lock,
 } from 'lucide-react';
 import { useData } from '../../context/DataContext';
 import type { Seta, Pregunta, Comestibilidad, Nutricion, OpcionPregunta } from '../../types';
@@ -10,6 +10,85 @@ import { COMESTIBILIDAD_LABELS, NUTRICION_LABELS } from '../../types';
 import Badge from '../../components/Badge';
 
 type Tab = 'setas' | 'preguntas' | 'subir-txt';
+
+// SHA-256 hash of the admin password (stored in repo — never plain text)
+const ADMIN_HASH = '8b64d8f332339899f8978c3ae13ee705ed155f7426d85b8b032a534ca4d896ee';
+
+async function sha256(text: string): Promise<string> {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+// ---------------------------------------------------------------------------
+// Login gate
+// ---------------------------------------------------------------------------
+const AdminLogin: React.FC<{ onSuccess: () => void }> = ({ onSuccess }) => {
+  const navigate = useNavigate();
+  const [pwd, setPwd] = useState('');
+  const [error, setError] = useState('');
+  const [checking, setChecking] = useState(false);
+
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
+    e.preventDefault();
+    setChecking(true);
+    setError('');
+    const hash = await sha256(pwd);
+    if (hash === ADMIN_HASH) {
+      sessionStorage.setItem('admin_auth', '1');
+      onSuccess();
+    } else {
+      setError('Contraseña incorrecta.');
+    }
+    setChecking(false);
+  }, [pwd, onSuccess]);
+
+  return (
+    <div style={{ minHeight: '100vh', background: 'var(--color-cream)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+      <div className="card" style={{ padding: '2.5rem 2rem', maxWidth: '380px', width: '100%', textAlign: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1.25rem' }}>
+          <div style={{ background: 'var(--color-forest)', borderRadius: '50%', width: '3rem', height: '3rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <Lock size={20} color="white" />
+          </div>
+        </div>
+        <h2 style={{ marginTop: 0, marginBottom: '0.25rem', fontSize: '1.2rem' }}>Panel de Administración</h2>
+        <p style={{ fontFamily: 'Poppins, sans-serif', fontSize: '0.85rem', color: '#6b7280', marginBottom: '1.75rem' }}>
+          Acceso restringido. Introduce la contraseña.
+        </p>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="password"
+            value={pwd}
+            onChange={(e) => setPwd(e.target.value)}
+            placeholder="Contraseña"
+            autoFocus
+            style={{
+              width: '100%', padding: '0.65rem 0.875rem', border: '1.5px solid #d1d5db',
+              borderRadius: '0.5rem', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem',
+              boxSizing: 'border-box', marginBottom: '0.75rem', outline: 'none',
+            }}
+          />
+          {error && (
+            <p style={{ color: '#dc2626', fontFamily: 'Poppins, sans-serif', fontSize: '0.82rem', marginBottom: '0.75rem' }}>{error}</p>
+          )}
+          <button
+            type="submit"
+            disabled={checking || !pwd}
+            className="btn-primary"
+            style={{ width: '100%', justifyContent: 'center' }}
+          >
+            {checking ? 'Verificando…' : 'Entrar'}
+          </button>
+        </form>
+        <button
+          onClick={() => navigate('/')}
+          style={{ marginTop: '1rem', background: 'none', border: 'none', cursor: 'pointer', fontFamily: 'Poppins, sans-serif', fontSize: '0.82rem', color: '#9ca3af' }}
+        >
+          ← Volver al inicio
+        </button>
+      </div>
+    </div>
+  );
+};
 
 // ---------------------------------------------------------------------------
 // Helpers
@@ -35,6 +114,11 @@ const Admin: React.FC = () => {
   const navigate = useNavigate();
   const { setas, preguntas, setSetas, setPreguntas } = useData();
   const [tab, setTab] = useState<Tab>('setas');
+  const [authenticated, setAuthenticated] = useState(() => sessionStorage.getItem('admin_auth') === '1');
+
+  if (!authenticated) {
+    return <AdminLogin onSuccess={() => setAuthenticated(true)} />;
+  }
 
   return (
     <div style={{ minHeight: '100vh', background: 'var(--color-cream)', paddingBottom: '3rem' }}>
