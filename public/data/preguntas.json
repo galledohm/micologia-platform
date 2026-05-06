@@ -2,263 +2,523 @@
   "preguntas": [
     {
       "id": "preg_001",
-      "texto": "¿Qué tipo de espora produce Amanita muscaria?",
+      "texto": "En relación a la introducción: ¿cuál de las siguientes afirmaciones sobre los hongos es correcta?",
       "opciones": [
-        { "id": "a", "texto": "Ascosporas" },
-        { "id": "b", "texto": "Basidiosporas" },
-        { "id": "c", "texto": "Conidios" },
-        { "id": "d", "texto": "Zigosporas" }
+        { "id": "a", "texto": "Los hongos son organismos procariotas porque tienen el material genético disuelto en el citoplasma." },
+        { "id": "b", "texto": "Los hongos son organismos eucariotas que presentan gran parte del material genético protegido dentro de un núcleo bien definido que se encuentra rodeado de una membrana nuclear." },
+        { "id": "c", "texto": "Los hongos son organismos autótrofos porque son capaces de hacer la fotosíntesis como las algas y las plantas." },
+        { "id": "d", "texto": "Los hongos son organismos procariotas que presentan gran parte del material genético protegido dentro del núcleo y rodeado de una membrana nuclear." }
       ],
       "respuestaCorrecta": "b",
-      "tema": "Reproducción fúngica",
-      "fuente": "demo"
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_002",
-      "texto": "¿Cuál de las siguientes toxinas es la principal responsable de la mortalidad por Amanita phalloides?",
+      "texto": "En relación a la introducción: ¿cómo se alimentan los hongos?",
       "opciones": [
-        { "id": "a", "texto": "Muscarina" },
-        { "id": "b", "texto": "Ibotenico" },
-        { "id": "c", "texto": "Amatoxinas (alfa-amanitina)" },
-        { "id": "d", "texto": "Orellanina" }
+        { "id": "a", "texto": "Los hongos son organismos autótrofos que presentan cloroplastos para hacer la fotosíntesis." },
+        { "id": "b", "texto": "Los hongos son organismos heterótrofos que presentan cloroplastos para hacer la fotosíntesis." },
+        { "id": "c", "texto": "Los hongos son organismos heterótrofos que no son capaces de producir su propio alimento por la fotosíntesis, por lo que se alimentan descomponiendo la materia orgánica de otros organismos." },
+        { "id": "d", "texto": "Los hongos son organismos que en determinadas condiciones pueden ser autótrofos para producir su alimento realizando la fotosíntesis y en otras condiciones son heterótrofos porque se alimentan descomponiendo la materia orgánica de otros organismos." }
       ],
       "respuestaCorrecta": "c",
-      "tema": "Toxicología fúngica",
-      "fuente": "demo"
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_003",
-      "texto": "¿Cómo se denomina la relación simbiótica entre el hongo y la raíz de una planta?",
+      "texto": "En relación a las funciones de los hongos: ¿cuál es su función principal?",
       "opciones": [
-        { "id": "a", "texto": "Liquen" },
-        { "id": "b", "texto": "Micorriza" },
-        { "id": "c", "texto": "Endofitismo" },
-        { "id": "d", "texto": "Parasitismo" }
+        { "id": "a", "texto": "La principal función de los hongos es la descomposición de la materia orgánica, para generar nutrientes que sean asimilados por otros seres vivos de la cadena trófica del ecosistema." },
+        { "id": "b", "texto": "La principal función de los hongos es regular las metapoblaciones de animales y de plantas, para reducir el riesgo de plagas y de enfermedades." },
+        { "id": "c", "texto": "La principal función de los hongos es hacer la fotosíntesis, para generar nutrientes para que puedan ser asimilados por otros seres vivos de la cadena trófica del ecosistema." },
+        { "id": "d", "texto": "La principal función de los hongos es controlar las poblaciones de insectos, para evitar que se produzcan plagas." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Ecología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_004",
-      "texto": "¿A qué división pertenecen las setas con hifas septadas y basidios?",
+      "texto": "En relación a las estructuras especializadas: ¿cuál de las siguientes afirmaciones es correcta?",
       "opciones": [
-        { "id": "a", "texto": "Ascomycota" },
-        { "id": "b", "texto": "Zygomycota" },
-        { "id": "c", "texto": "Basidiomycota" },
-        { "id": "d", "texto": "Chytridiomycota" }
+        { "id": "a", "texto": "Los esclerocios son masas redondeadas de naturaleza pseudoparenquimática, llenas de sustancias de reserva, empleadas por los hongos para la supervivencia en condiciones desfavorables." },
+        { "id": "b", "texto": "Los rizoides son una especie de cordones formados por hifas paralelas con aspecto similar a las raíces para anclarse al sustrato y absorber nutrientes." },
+        { "id": "c", "texto": "Los estromas son estructuras pseudoparenquimáticas de formas diversas, que sirven de soporte a los cuerpos fructíferos de algunos ascomycetes." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
       ],
-      "respuestaCorrecta": "c",
-      "tema": "Taxonomía fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_005",
-      "texto": "¿Cuál es la función principal del micelio en un hongo?",
+      "texto": "En relación a las aplicaciones de los hongos: ¿qué descubrimiento realizó Alexander Fleming?",
       "opciones": [
-        { "id": "a", "texto": "Reproducción sexual" },
-        { "id": "b", "texto": "Fotosíntesis" },
-        { "id": "c", "texto": "Absorción de nutrientes y crecimiento vegetativo" },
-        { "id": "d", "texto": "Producción de esporas" }
+        { "id": "a", "texto": "Alexander Fleming hizo uno de los descubrimientos más importantes de la historia al descubrir la doble hélice de ADN, por lo que recibió el Premio Nobel de Medicina." },
+        { "id": "b", "texto": "Alexander Fleming hizo uno de los descubrimientos más importantes de la historia al descubrir la reacción en cadena de la polimerasa, por lo que recibió el Premio Nobel de Medicina." },
+        { "id": "c", "texto": "Alexander Fleming hizo uno de los descubrimientos más importantes de la historia al descubrir la penicilina, por lo que recibió el Premio Nobel de Medicina." },
+        { "id": "d", "texto": "Alexander Fleming hizo uno de los descubrimientos más importantes de la historia al descubrir la vacuna de la viruela, por lo que recibió el Premio Nobel de Medicina." }
       ],
       "respuestaCorrecta": "c",
-      "tema": "Morfología fúngica",
-      "fuente": "demo"
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_006",
-      "texto": "¿Qué estructura caracteriza al género Boletus frente a otros Agáricos?",
+      "texto": "En relación a las aplicaciones de los hongos: ¿qué es la paleomicología?",
       "opciones": [
-        { "id": "a", "texto": "Láminas bajo el sombrero" },
-        { "id": "b", "texto": "Tubos y poros bajo el sombrero" },
-        { "id": "c", "texto": "Aguijones o espinas" },
-        { "id": "d", "texto": "Pliegues o falsas láminas" }
+        { "id": "a", "texto": "La etnomicología es una rama de la micología que se encarga del estudio del registro fósil de los hongos." },
+        { "id": "b", "texto": "La paleomicología es una rama de la micología que se encarga del estudio de las relaciones de los seres humanos con los hongos, así como sus usos y aprovechamientos en el tiempo." },
+        { "id": "c", "texto": "La paleomicología es una rama de la micología que se encarga del estudio del registro fósil de los hongos." },
+        { "id": "d", "texto": "La micosociología es una rama de la micología que se encarga del uso de terapias con hongos como elementos medicinales." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Morfología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_007",
-      "texto": "¿Qué compuesto da el color naranja al látex de Lactarius deliciosus?",
+      "texto": "En relación a la historia de la micología: ¿cuál es el primer registro conocido del uso de los hongos por los humanos?",
       "opciones": [
-        { "id": "a", "texto": "Clorofila" },
-        { "id": "b", "texto": "Carotenoides (azuleno-derivados)" },
-        { "id": "c", "texto": "Antocianinas" },
-        { "id": "d", "texto": "Melaninas" }
+        { "id": "a", "texto": "El famoso hombre Otzi descubierto en 1992 en los Alpes, datado en aproximadamente 5200 años, que portaba varios hongos para uso incendiario y medicinal." },
+        { "id": "b", "texto": "Las pinturas del panel de Selva Pascuala en el municipio conquense de Villar de Humo, que representan probablemente setas alucinógenas datadas aproximadamente del 3000 a.C." },
+        { "id": "c", "texto": "Un estudio de los cálculos dentales de los neandertales publicado en 2017 en la revista Nature remonta el uso de hongos hace 48000 años, evidenciando el consumo de hongos como Coprinopsis cinerea y Schizophyllum commune." },
+        { "id": "d", "texto": "Las pinturas rupestres de representaciones humanoides con forma de seta encontradas en el norte de África en los yacimientos de Tin-Tazariff y en el sur de Tasili en Argelia, estimadas entre los años 7000 a.C. y 5000 a.C." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Bioquímica fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_008",
-      "texto": "¿Cuál es el principal componente de la pared celular de los hongos?",
+      "texto": "En relación a la historia de la micología: ¿qué representan los petroglifos con figuras antropomórficas con setas en la cabeza descubiertos en Siberia?",
       "opciones": [
-        { "id": "a", "texto": "Celulosa" },
-        { "id": "b", "texto": "Pectina" },
-        { "id": "c", "texto": "Quitina" },
-        { "id": "d", "texto": "Peptidoglicano" }
+        { "id": "a", "texto": "Se cree que representan el uso de hongos alucinógenos en esta región durante la Edad Antigua." },
+        { "id": "b", "texto": "Las Kuda Kallu (piedra-paraguas) son estructuras megalíticas en forma de setas encontradas en el sur de la India que representan el uso de hongos para el control de plagas de insectos." },
+        { "id": "c", "texto": "Los mushroom stones (piedra-hongos) son estructuras de piedra volcánica con representaciones de hongos utilizados durante la Edad Antigua por los mayas para ahuyentar a los enemigos y los malos espíritus." },
+        { "id": "d", "texto": "Las representaciones de hongos descubiertos en los monolitos 4 y 53 del conjunto megalítico de Stonehenge representan la creencia del uso de hongos después de la muerte." }
       ],
-      "respuestaCorrecta": "c",
-      "tema": "Bioquímica fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_009",
-      "texto": "¿Cuál de las siguientes especies es un ascomiceto?",
+      "texto": "En relación a la historia de la clasificación de los seres vivos: ¿quién clasificó los seres vivos en cinco reinos?",
       "opciones": [
-        { "id": "a", "texto": "Amanita muscaria" },
-        { "id": "b", "texto": "Boletus edulis" },
-        { "id": "c", "texto": "Morchella esculenta" },
-        { "id": "d", "texto": "Cantharellus cibarius" }
+        { "id": "a", "texto": "Aristóteles clasifica los seres vivos en cinco reinos: Animalia, Plantae, Protista, Fungi y Monera." },
+        { "id": "b", "texto": "Robert H. Whittaker clasifica los seres vivos en tres dominios: Archaea, Bacteria y Eukarya." },
+        { "id": "c", "texto": "Michael Ruggiero clasifica los seres vivos en dos reinos: Animalia y Plantae." },
+        { "id": "d", "texto": "Robert H. Whittaker clasifica los seres vivos en cinco reinos: Animalia, Plantae, Protista, Fungi y Monera." }
       ],
-      "respuestaCorrecta": "c",
-      "tema": "Taxonomía fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_010",
-      "texto": "¿Qué tipo de nutrición tiene Trametes versicolor?",
+      "texto": "En relación al sistema de clasificación taxonómica: ¿cómo es el sistema de nomenclatura de hongos?",
       "opciones": [
-        { "id": "a", "texto": "Micorrícica" },
-        { "id": "b", "texto": "Parásita" },
-        { "id": "c", "texto": "Saprobia" },
-        { "id": "d", "texto": "Fotosintética" }
+        { "id": "a", "texto": "El sistema de nomenclatura de hongos es trinominal porque usa 3 palabras, la primera indica el género, la segunda la especie y la tercera la variedad." },
+        { "id": "b", "texto": "El sistema de nomenclatura de hongos es binominal porque usa 2 palabras, la primera indica el género y la segunda el epíteto específico indica la especie." },
+        { "id": "c", "texto": "El sistema de nomenclatura de hongos está regulado principalmente por el Código Internacional de nomenclatura para algas, plantas y hongos acordado en Madrid en 1992." },
+        { "id": "d", "texto": "Las principales bases de datos de nomenclatura de hongos son Index Fungorum y MycoBank." }
       ],
-      "respuestaCorrecta": "c",
-      "tema": "Ecología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_011",
-      "texto": "¿Qué es el carpóforo?",
+      "texto": "En relación a las fuentes de los nombres científicos: ¿cuál de las siguientes afirmaciones es correcta?",
       "opciones": [
-        { "id": "a", "texto": "El conjunto de hifas que forman el micelio" },
-        { "id": "b", "texto": "El cuerpo fructífero visible del hongo" },
-        { "id": "c", "texto": "El órgano de reproducción asexual" },
-        { "id": "d", "texto": "La parte subterránea del hongo" }
+        { "id": "a", "texto": "La mayoría de nombres científicos tienen raíces grecolatinas." },
+        { "id": "b", "texto": "Algunos nombres científicos son eponímicos (honoríficos) dedicados a científicos, deportistas, familiares o figuras relevantes." },
+        { "id": "c", "texto": "Algunos nombres científicos son toponímicos (geográficos) dedicados al lugar donde se descubrió la especie." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Morfología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_012",
-      "texto": "¿En qué época del año es más habitual encontrar Morchella esculenta?",
+      "texto": "En relación a la clasificación y taxonomía de grandes grupos de hongos: ¿en cuántos phyla se divide el reino Fungi?",
       "opciones": [
-        { "id": "a", "texto": "Verano" },
-        { "id": "b", "texto": "Otoño" },
-        { "id": "c", "texto": "Invierno" },
-        { "id": "d", "texto": "Primavera" }
+        { "id": "a", "texto": "El reino Fungi se divide únicamente en 2 phyla: Ascomycota y Basidiomycota." },
+        { "id": "b", "texto": "El reino Fungi se divide en 6 phyla: Ascomycota, Basidiomycota, Chitridiomycota, Myxomicota, Oomycota y Zygomycota." },
+        { "id": "c", "texto": "El reino Fungi se divide al menos en 4 phyla: Ascomycota, Basidiomycota, Chitridiomycota y Zygomycota." },
+        { "id": "d", "texto": "El reino Fungi se divide en 3 phyla: Chromista, Protozoa y Fungi." }
       ],
-      "respuestaCorrecta": "d",
-      "tema": "Ecología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_013",
-      "texto": "¿Cuál de los siguientes géneros contiene la volva (saco basal)?",
+      "texto": "En relación a la clasificación y taxonomía de grandes grupos de hongos: ¿qué caracteriza al phylum Ascomycota?",
       "opciones": [
-        { "id": "a", "texto": "Boletus" },
-        { "id": "b", "texto": "Amanita" },
-        { "id": "c", "texto": "Cantharellus" },
-        { "id": "d", "texto": "Pleurotus" }
+        { "id": "a", "texto": "El phylum Ascomycota presenta una fase fagotrófica de bacterias y microorganismos del suelo." },
+        { "id": "b", "texto": "El phylum Ascomycota presenta zoosporas con dos flagelos." },
+        { "id": "c", "texto": "El phylum Ascomycota presenta la reproducción asexual por aplanosporas o pseudoconidios." },
+        { "id": "d", "texto": "El phylum Ascomycota presenta organismos de gran interés en la industria alimentaria para la fabricación de pan, cerveza, vino y quesos." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Morfología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_014",
-      "texto": "¿Qué diferencia a los Basidiomycota de los Ascomycota en cuanto a reproducción sexual?",
+      "texto": "En relación a la clasificación y taxonomía de grandes grupos de hongos: ¿qué caracteriza al phylum Basidiomycota?",
       "opciones": [
-        { "id": "a", "texto": "Los Basidiomycota producen esporas en ascos" },
-        { "id": "b", "texto": "Los Basidiomycota producen esporas en basidios externos" },
-        { "id": "c", "texto": "Los Ascomycota no tienen reproducción sexual" },
-        { "id": "d", "texto": "No existe diferencia estructural" }
+        { "id": "a", "texto": "El phylum Basidiomycota es el grupo que presenta organismos con mayor interés ecológico en los ecosistemas forestales y en la reforestación, ya que hay numerosas especies micorrizógenas que establecen micorrizas con plantas leñosas." },
+        { "id": "b", "texto": "El phylum Basidiomycota es el grupo más complejo y numeroso de hongos." },
+        { "id": "c", "texto": "El phylum Basidiomycota son organismos generalmente saprófitos de sustratos concentrados y húmedos (alimentos, frutos, semillas y restos vegetales) y de estiércol (coprófilos)." },
+        { "id": "d", "texto": "El phylum Basidiomycota está formado fundamentalmente por mohos mucilaginosos." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Reproducción fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_015",
-      "texto": "¿Cuál es la intoxicación más grave que puede producir Armillaria mellea si se consume cruda?",
+      "texto": "En relación al aspecto, coloración y tamaño general: ¿cuál de las siguientes afirmaciones es correcta?",
       "opciones": [
-        { "id": "a", "texto": "Síndrome muscarínico" },
-        { "id": "b", "texto": "Síndrome gastrointestinal" },
-        { "id": "c", "texto": "Síndrome faloidiano" },
-        { "id": "d", "texto": "Síndrome alucinógeno" }
+        { "id": "a", "texto": "La coloración se puede medir con una carta de colores (Pantone) o colorímetro digital." },
+        { "id": "b", "texto": "Las dimensiones se pueden medir con una cinta métrica en el caso de setas grandes y un calibre para setas pequeñas." },
+        { "id": "c", "texto": "El peso se puede medir utilizando una balanza." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Toxicología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_016",
-      "texto": "¿Qué término describe a hongos que viven sobre materia orgánica muerta en descomposición?",
+      "texto": "En relación a los albinismos: ¿a qué se deben los albinismos en las setas?",
       "opciones": [
-        { "id": "a", "texto": "Simbiontes" },
-        { "id": "b", "texto": "Parásitos" },
-        { "id": "c", "texto": "Saprobios" },
-        { "id": "d", "texto": "Mutualistas" }
+        { "id": "a", "texto": "Los albinismos en las setas se producen por la pérdida de los pigmentos hidrosolubles en condiciones de elevada pluviometría." },
+        { "id": "b", "texto": "Los albinismos en las setas se producen debido a la falta de pigmentación por encontrarse bajo el humus o la hojarasca." },
+        { "id": "c", "texto": "Los albinismos en las setas se deben a la falta de la expresión de algún gen relacionado con algún pigmento." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
       ],
-      "respuestaCorrecta": "c",
-      "tema": "Ecología fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_017",
-      "texto": "¿Cuál es la especie de Pleurotus más cultivada industrialmente?",
+      "texto": "En relación a la cuantificación de los caracteres organolépticos: ¿cómo se puede cuantificar el aroma?",
       "opciones": [
-        { "id": "a", "texto": "Pleurotus eryngii" },
-        { "id": "b", "texto": "Pleurotus ostreatus" },
-        { "id": "c", "texto": "Pleurotus cornucopiae" },
-        { "id": "d", "texto": "Pleurotus djamor" }
+        { "id": "a", "texto": "Los caracteres organolépticos no se pueden cuantificar en el laboratorio." },
+        { "id": "b", "texto": "Los compuestos orgánicos volátiles son iguales en todas las especies." },
+        { "id": "c", "texto": "El aroma se puede cuantificar mediante una cromatografía de gases-olfatometría." },
+        { "id": "d", "texto": "El sabor se puede cuantificar mediante una carta de colores (Pantone)." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Micología aplicada",
-      "fuente": "demo"
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_018",
-      "texto": "¿Qué se entiende por 'doble preparación' en micología culinaria?",
+      "texto": "En relación a los compuestos fenólicos: ¿qué propiedades tiene el ácido gálico?",
       "opciones": [
-        { "id": "a", "texto": "Cocinar dos veces a alta temperatura para reducir toxinas" },
-        { "id": "b", "texto": "Hervir, desechar el agua y luego cocinar de nuevo" },
-        { "id": "c", "texto": "Marinar y luego saltear" },
-        { "id": "d", "texto": "Secar y luego rehidratar" }
+        { "id": "a", "texto": "El ácido ferúlico tiene actividad hipocolesteromiante e hipoglucémica y se encuentra fundamentalmente en Marasmius oreades." },
+        { "id": "b", "texto": "El ácido gálico presenta actividad antibiótica, anticancerígena, antioxidante, antidiabética y antiinflamatoria siendo usado para el tratamiento de enfermedades cardiovasculares y metabólicas." },
+        { "id": "c", "texto": "El ácido cafeico tiene propiedades analgésicas y antiinflamatorias, siendo frecuente en Boletus aereus, Boletus edulis, Boletus pinophilus, Boletus reticulatus, Craterellus cornucopioides e Hygrophorus marzuolus." },
+        { "id": "d", "texto": "El ácido gentísico presenta actividad antibiótica, anticancerígena y antiinflamatoria, encontrándose en Hygrophorus marzuolus, Pleurotus eryngii y Pleurotus ostreatus." }
       ],
       "respuestaCorrecta": "b",
-      "tema": "Gastronomía y seguridad",
-      "fuente": "demo"
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_019",
-      "texto": "¿Cuál es la estructura reproductora de los Ascomycota?",
+      "texto": "En relación a los polisacáridos: ¿cuál de las siguientes afirmaciones es correcta?",
       "opciones": [
-        { "id": "a", "texto": "Basidio" },
-        { "id": "b", "texto": "Asca" },
-        { "id": "c", "texto": "Cleistotecio" },
-        { "id": "d", "texto": "Peritecio" }
+        { "id": "a", "texto": "Los polisacáridos son glicoproteínas que intervienen en el metabolismo o en las relaciones simbióticas o parasitarias, que aparecen en plantas y hongos." },
+        { "id": "b", "texto": "La principal función de los polisacáridos es la inmunomodulación." },
+        { "id": "c", "texto": "Los principales polisacáridos comercializados son el esquizofilano (Schyzophyllan®), el lentinano (Lentinan®) y la krestina (Krestin®)." },
+        { "id": "d", "texto": "La b y c son las respuestas correctas." }
       ],
-      "respuestaCorrecta": "b",
-      "tema": "Reproducción fúngica",
-      "fuente": "demo"
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
     },
     {
       "id": "preg_020",
-      "texto": "¿Qué tipo de micorriza forman la mayoría de los árboles forestales con hongos como Boletus?",
+      "texto": "En relación a la fotografía micológica: ¿cuáles son los aspectos más importantes a la hora de tomar una fotografía micológica?",
       "opciones": [
-        { "id": "a", "texto": "Endomicorriza arbuscular" },
-        { "id": "b", "texto": "Ectomicorriza" },
-        { "id": "c", "texto": "Ericoides" },
-        { "id": "d", "texto": "Orquideoides" }
+        { "id": "a", "texto": "Los aspectos más importantes a la hora de tomar una fotografía micológica son el control de la luz y la composición." },
+        { "id": "b", "texto": "Es importante tomar una fotografía micológica de calidad para diferenciar correctamente las especies." },
+        { "id": "c", "texto": "La fotografía didáctica consiste en expresar la visión personal, emocional o conceptual del autor, priorizando la técnica artística de las setas por encima de la documentación de la realidad." },
+        { "id": "d", "texto": "La fotografía artística consiste en documentar las características morfológicas y ecológicas de las setas." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 1",
+      "fuente": "Cuestionario 1"
+    },
+    {
+      "id": "preg_021",
+      "texto": "En relación a las formas de vida de los hongos: ¿cuál de las siguientes afirmaciones sobre el cultivo de hongos es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "La mayoría de hongos saprobios son difíciles de cultivar, excepto las trufas (truficultura) y las criadillas y trufas del desierto (turmicultura)." },
+        { "id": "b", "texto": "La mayoría de hongos micorrícicos no se pueden cultivar, aunque algunas especies como las trufas (truficultura) y las criadillas y trufas del desierto (turmicultura) se cultivan." },
+        { "id": "c", "texto": "Los hongos micorrícicos no se pueden cultivar, porque necesitan una bacteria del suelo que intervenga en la formación de las micorrizas." },
+        { "id": "d", "texto": "Los champiñones (Agaricus bisporus) y la seta de ostra (Pleurotus ostreatus) son los hongos micorrícicos más cultivados en el mundo." }
       ],
       "respuestaCorrecta": "b",
-      "tema": "Ecología fúngica",
-      "fuente": "demo"
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_022",
+      "texto": "En relación a las formas de vida de los hongos: ¿qué son los hongos sapromicorrícicos?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos sapromicorrícicos son aquellos hongos que viven y colonizan a otros seres vivos, alimentándose de ellos y produciéndoles la muerte, y posteriormente descomponen su materia orgánica muerta." },
+        { "id": "b", "texto": "Los hongos saproparásitos, también denominados parásitos facultativos, son aquellos hongos que establecen relaciones simbióticas con plantas, pero son favorecidos cuando se produce una alteración de su hábitat." },
+        { "id": "c", "texto": "Los hongos sapromicorrícicos son aquellos hongos muy sencillos de cultivar ya que tienen un modo de vida saprófito, además de micorrizógeno." },
+        { "id": "d", "texto": "Los hongos sapromicorrícicos también denominados saprosimbióticos, son aquellos hongos que establecen relaciones simbióticas con plantas, pero son favorecidos cuando se produce una alteración de su hábitat." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_023",
+      "texto": "En relación al comportamiento de los hongos frente a la luz solar: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos umbrófilos son aquellos hongos que se desarrollan fundamentalmente en bosques abiertos y soleados con gran incidencia de la luz solar." },
+        { "id": "b", "texto": "Buenos ejemplos de hongos heliófilos son el huevo de rey (Amanita caesarea), el hongo negro (Boletus aereus), el boleto de verano (Boletus reticulatus) y el rebozuelo (Cantharellus pallens)." },
+        { "id": "c", "texto": "Buenos ejemplos de hongos umbrófilos son el huevo de rey (Amanita caesarea) y el hongo negro (Boletus aereus)." },
+        { "id": "d", "texto": "Los hongos heliófilos son aquellos hongos que se desarrollan en bosques cerrados, húmedos y umbríos con poca incidencia de la luz solar." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_024",
+      "texto": "En relación al comportamiento de los hongos frente a la temperatura: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos psicrófilos son aquellos hongos que se desarrollan a temperaturas elevadas." },
+        { "id": "b", "texto": "Los hongos termófilos son aquellos hongos que se desarrollan a temperaturas elevadas, generalmente son también heliófilos." },
+        { "id": "c", "texto": "Buenos ejemplos de hongos termófilos son la seta de pie aterciopelado (Flammulina velutipes), el marzuelo (Hygrophorus marzuolus), la capuchina (Tricholoma portentosum) y el pie violeta (Collybia personata)." },
+        { "id": "d", "texto": "La seta de pie aterciopelado (Flammulina velutipes) tiene la peculiaridad de que su micelio activa la fructificación de cuerpos fructíferos a elevadas temperaturas." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_025",
+      "texto": "En relación al comportamiento de los hongos frente al pH: ¿qué son los hongos acidófilos?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos acidófilos son aquellos hongos que se desarrollan fundamentalmente en pH básico, superior a 7." },
+        { "id": "b", "texto": "Los hongos basófilos son aquellos hongos que se desarrollan fundamentalmente en pH ácido, inferior a 7." },
+        { "id": "c", "texto": "Los hongos indiferentes al pH son aquellos hongos que se desarrollan generalmente en pH neutro, cercano a 7." },
+        { "id": "d", "texto": "Los hongos acidófilos son aquellos hongos que se desarrollan fundamentalmente en pH ácido, inferior a 7." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_026",
+      "texto": "En relación a los hongos micorrícicos y las micorrizas: ¿cuáles son los beneficios de las micorrizas para el hongo?",
+      "opciones": [
+        { "id": "a", "texto": "Los principales beneficios de las micorrizas para la planta son el aporte de hidratos de carbono procedente de la fotosíntesis del hongo y la rehidratación de las plantas en periodos de sequía durante la noche." },
+        { "id": "b", "texto": "Los principales beneficios de las micorrizas para los hongos son el aumento de la superficie de absorción de agua y nutrientes, la protección frente a patógenos y la mayor resistencia a las heladas." },
+        { "id": "c", "texto": "Los principales beneficios de las micorrizas para el hongo son el aporte de hidratos de carbono procedente de la fotosíntesis de la planta y la rehidratación de los hongos en periodos de sequía durante la noche." },
+        { "id": "d", "texto": "Los principales beneficios de las micorrizas para el suelo son el aumento de la superficie de absorción de agua y nutrientes, la protección frente a patógenos y la mayor resistencia a las heladas." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_027",
+      "texto": "En relación a las micorrizas: ¿cómo son las ectomicorrizas?",
+      "opciones": [
+        { "id": "a", "texto": "En las ectomicorrizas las hifas del hongo penetran en el interior de la raíz sin penetrar en el interior de las células, envolviendo externamente las raíces formando un manto externo de hifas y penetrando en el espacio intercelular de las células corticales formando la red de Hartig." },
+        { "id": "b", "texto": "La mayoría de hongos ascomycetes y basidiomycetes forman endomicorrizas con árboles de gran importancia forestal." },
+        { "id": "c", "texto": "La mayoría de plantas en el mundo no tienen micorrizas, solo aparecen las micorrizas en ambientes extremos como el polo norte y la Antártida." },
+        { "id": "d", "texto": "La mayoría de zigomycetes forman ectomicorrizas." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_028",
+      "texto": "En relación a los hongos parásitos: ¿qué son los hongos parásitos facultativos (necrotróficos)?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos parásitos se pueden clasificar en función del hospedador en hongos parásitos facultativos (necrotróficos) y en hongos parásitos obligados (biotróficos)." },
+        { "id": "b", "texto": "Buenos ejemplos de hongos parásitos obligados (biotróficos) son la seta de color de miel (Armillaria mellea), la seta pipa (Ganoderma lucidum) y la gallina (Grifola frondosa)." },
+        { "id": "c", "texto": "Los hongos parásitos facultativos (necrotróficos) son aquellos hongos que producen la muerte del hospedador y luego descomponen su materia orgánica muerta." },
+        { "id": "d", "texto": "Buenos ejemplos de hongos parásitos facultativos (biotróficos) son la roya de la malva (Puccinia malvacearum) y el huitlacoche (Mycosarcoma maydis)." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_029",
+      "texto": "En relación a los hongos patógenos del arbolado urbano: ¿qué son?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos patógenos del arbolado urbano son aquellos hongos micorrícicos que aparecen de forma frecuente en zonas urbanas." },
+        { "id": "b", "texto": "Buenos ejemplos de patógenos del arbolado urbano son el champiñón amarilleante (Agaricus xanthodermus), la cicuta verde (Amanita phalloides) y la bruja (Pseudosperma rimosum), ya que son especies tóxicas que pueden provocar intoxicaciones o incluso la muerte de personas y animales." },
+        { "id": "c", "texto": "Los hongos patógenos del arbolado urbano son aquellos hongos que provocan graves daños en el arbolado urbano de parques y jardines, provocando generalmente podredumbre de la madera (hongos xilófagos) o caída de hojas o de acículas." },
+        { "id": "d", "texto": "Los hongos patógenos del arbolado urbano son aquellos hongos entomoparásitos que fructifican sobre los insectos patógenos del arbolado urbano, realizando de esta forma un control biológico de estos insectos." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_030",
+      "texto": "En relación a los hongos saprobios: ¿qué son los corros de brujas?",
+      "opciones": [
+        { "id": "a", "texto": "Los corros de brujas son sectores anulares o anillos formados por el crecimiento del micelio de un hongo saprobio, que generalmente se manifiestan por una banda de distinto color de la hierba." },
+        { "id": "b", "texto": "Los hongos micorrícicos forman corros de brujas alrededor de la planta hospedadora." },
+        { "id": "c", "texto": "Ejemplos típicos de hongos que forman corros de brujas son el hongo negro (Boletus aereus), el boleto pinicola (Boletus pinophilus) y el boleto de verano (Boletus reticulatus)." },
+        { "id": "d", "texto": "Los corros de brujas son agrupaciones misteriosas de brujas entorno a los hongos parásitos de gramíneas para realizar maleficios y conjuros." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_031",
+      "texto": "En relación a los hongos saprobios: ¿qué es Onygena equina?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos folícolas son aquellos hongos que fructifican sobre folios de papel." },
+        { "id": "b", "texto": "Los hongos pirófilos son aquellos hongos tóxicos que afectan al sistema nervioso de los animales y personas que los consumen." },
+        { "id": "c", "texto": "Un ejemplo típico de hongo queratinofílico es Onygena equina, que fructifica sobre restos con abundante queratina como cuernos de bóvidos y cérvidos y pezuñas de equinos." },
+        { "id": "d", "texto": "Los hongos coprófilos son aquellos hongos que fructifican sobre restos leñosos." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_032",
+      "texto": "En relación a los bosques de betuláceas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los bosques de betuláceas en Castilla-La Mancha están formados principalmente por el aliso común (Alnus glutinosa), el aliso lusitano (Alnus lusitanica), el abedul pubescente (Betula pubescens), el abedul péndulo (Betula pendula) y el avellano (Corylus avellana)." },
+        { "id": "b", "texto": "Las especies más comunes en las alisedas son el boleto (Boletus edulis), el rebozuelo (Cantharellus cibarius), el yesquero de abedul (Pyptoporus betulinus), el níscalo de abedul (Lactarius torminosus) y el boleto de abedul (Leccinum scabrum)." },
+        { "id": "c", "texto": "Las especies más comunes en los abedulares son Ciboria corylii, Calycina citrina, Lactarius pyrogalus y Plicaturopsis crispa." },
+        { "id": "d", "texto": "Ninguna de las anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_033",
+      "texto": "En relación a los bosques de fagáceas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los bosques de castaño (Castanea sativa) son los bosques más frecuentes en la provincia de Guadalajara." },
+        { "id": "b", "texto": "En Castilla-La Mancha se conoce solo la presencia de bosques relictos de haya (Fagus sylvatica) en la Sierra de Ayllón en la provincia de Guadalajara, donde destaca el hayedo de Tejera Negra." },
+        { "id": "c", "texto": "El haya (Fagus sylvatica) se encuentra catalogada como especie de 'interés especial' en el Catálogo Regional de Especies Amenazadas de Castilla-La Mancha." },
+        { "id": "d", "texto": "La b y c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_034",
+      "texto": "En relación a los bosques de pináceas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los pinares de pino albar (Pinus sylvestris) se encuentran en la provincia de Guadalajara en el Alto Tajo (Alcoroches, Checa, Chequilla, Orea, Peralejos de las Truchas, Zaorejas) y en la Sierra de Ayllón (Cantalojas, Condemios de Arriba, Galve de Sorbe y Campisábalos)." },
+        { "id": "b", "texto": "En los pinares de pino laricio (Pinus nigra subsp. salzmannii) de Castilla-La Mancha podemos encontrar lengua de vaca blanca (Hydnum pallidum), llanega negra (Hygrophorus limacinus) y níscalo de sangre (Lactarius sannguifluus)." },
+        { "id": "c", "texto": "Algunas especies de colmenillas como Morchella esculenta y Morchella dunensis se pueden encontrar en bosques de pinos carrascos (Pinus halepensis)." },
+        { "id": "d", "texto": "Todas las anteriores respuestas son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_035",
+      "texto": "En relación a los bosques de salicáceas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los bosques de salicáceas se encuentran cercanos a cursos de agua de los principales ríos, arroyos, lagunas y lagos de Castilla-La Mancha." },
+        { "id": "b", "texto": "Las especies arbóreas más frecuentes y productivas desde el punto de vista fúngico en los bosques de salicáceas de Castilla-La Mancha son el álamo blanco (Populus alba), el álamo común (Populus nigra) y el álamo temblón (Populus tremula)." },
+        { "id": "c", "texto": "Las especies de hongos más conocidos que fructifican en bosques de salicáceas son la seta de chopo (Cyclocybe cylindracea), las colmenillas (Morchella esculenta, Morchella semilibera), el pollo de los bosques (Laetiporus sulphureus) y el hongo de álamo blanco (Leccinum duriusculum)." },
+        { "id": "d", "texto": "Todas las anteriores respuestas son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_036",
+      "texto": "En relación a las praderas, pastizales y claros herbosos: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "La mayoría de especies que fructifican en praderas, pastizales y claros herbosos son especies saprobias, generalmente pratícolas." },
+        { "id": "b", "texto": "El champiñón gigante (Agaricus crocodilinus) es una especie buena acumuladora de plomo." },
+        { "id": "c", "texto": "En las praderas, pastizales y claros herbosos destaca la presencia de numerosas especies micorrícicas como los boletos (Boletus spp.), las amanitas (Amanita spp.) y los níscalos (Lactarius spp.)." },
+        { "id": "d", "texto": "El perrechico (Calocybe gambosa) es una especie que fructifica generalmente en praderas, pastizales y claros herbosos durante el otoño y el invierno." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_037",
+      "texto": "En relación a los tilares: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los tilares de Tilia platyphyllos son los bosques más frecuentes en la provincia de Guadalajara." },
+        { "id": "b", "texto": "Sarcoscypha jurana es una especie saprobia que fructifica de forma exclusiva sobre restos de madera de tilos." },
+        { "id": "c", "texto": "El tilo (Tilia platyphyllos) no se encuentra catalogado en el Catálogo Regional de Especies Amenazadas de Castilla-La Mancha." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_038",
+      "texto": "En relación a las turberas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Las turberas ácidas se encuentran tapizadas generalmente por musgos de los géneros Sphagnum y Polytrichum." },
+        { "id": "b", "texto": "En la provincia de Guadalajara no hay turberas ni ácidas ni alcalinas." },
+        { "id": "c", "texto": "En las turberas alcalinas se encuentran generalmente especies de plantas carnívoras como el rocío del sol (Drosera rotundifolia)." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_039",
+      "texto": "En relación a las setas urbanas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Todas las especies recolectadas en zonas urbanas deben considerarse tóxicas debido a los metales pesados y las toxinas de insecticidas, herbicidas y fungicidas que se utilizan habitualmente en entornos urbanos." },
+        { "id": "b", "texto": "Algunas especies de setas urbanas pueden ser alóctonas o exóticas debido a que en entornos urbanos hay algunas plantas exóticas y se usan abonos y virutas de jardinería de importación." },
+        { "id": "c", "texto": "Las setas en entornos urbanos pueden fructificar durante todo el año incluso en pleno verano (riego) o en invierno (efecto isla)." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_040",
+      "texto": "En relación a los bosques de repoblación: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En la provincia de Guadalajara hay repoblaciones de cedros del Atlas (Cedrus atlantica) en la Sierra de Ayllón." },
+        { "id": "b", "texto": "En los cedros del Atlas (Cedrus atlantica) fructifica generalmente Cortinarius cruentus, Rhizopogon villusulus y Suillus lakei." },
+        { "id": "c", "texto": "Lactarius semisanguifluus es una especie exclusiva del género Pinus, no fructifica en abetos rojos (Picea abies)." },
+        { "id": "d", "texto": "Por el momento no hay ninguna repoblación de abeto de Douglas (Pseudotsuga menziesii) en la provincia de Guadalajara." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 2",
+      "fuente": "Cuestionario 2"
     }
   ]
 }
