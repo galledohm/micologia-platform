@@ -96,16 +96,16 @@ const TestImagenes: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div style={{ maxWidth: '700px', margin: '2rem auto', padding: '0 1rem' }}>
+      <div style={{ maxWidth: '920px', margin: '2rem auto', padding: '0 1rem' }}>
         <div className="card">
           {/* Image */}
-          <div style={{ position: 'relative', background: '#1a3a16', height: '280px', overflow: 'hidden' }}>
+          <div style={{ position: 'relative', background: '#1a3a16', height: 'clamp(320px, 55vh, 640px)', overflow: 'hidden' }}>
             {!imgError ? (
               <img
                 key={seta.id}
                 src={seta.imagenUrl}
                 alt="Seta a identificar"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
+                style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
                 onError={() => setImgError(true)}
               />
             ) : (

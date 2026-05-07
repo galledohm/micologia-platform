@@ -214,6 +214,19 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <p style={{
+        margin: '0 auto 3rem',
+        maxWidth: '900px',
+        padding: '0 1.5rem',
+        textAlign: 'center',
+        color: '#4b5563',
+        fontFamily: 'Poppins, sans-serif',
+        fontSize: '0.92rem',
+        lineHeight: 1.6,
+      }}>
+        Gracias a Javier Marcos y a todos los compañeros del curso de Orientador Micológico 2026 por compartir su conocimiento y pasión por la micología.
+      </p>
     </div>
   );
 };
