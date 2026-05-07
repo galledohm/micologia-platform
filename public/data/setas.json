@@ -189,6 +189,86 @@
       "nutricion": "saprobia",
       "tema": "Curso micológico",
       "descripcion": "Saprobio, no comestible."
+    },
+    {
+      "id": "seta_020",
+      "nombreCientifico": "Helvella acetabulum",
+      "nombreComun": "Helvella acetabulum",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Helvella_acetabulum.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Costillas que suben hasta la mitad. Saprosimbiótica, comestible con doble tratamiento."
+    },
+    {
+      "id": "seta_021",
+      "nombreCientifico": "Helvella helvellula",
+      "nombreComun": "Helvella helvellula",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/Helvella-helvellula5.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Muy pequeña, apotecio en forma de copa, pie rudimentario, asociada a cistáceas y de suelo ácido. Sin interés culinario."
+    },
+    {
+      "id": "seta_022",
+      "nombreCientifico": "Helvella semiobruta",
+      "nombreComun": "Helvella semiobruta",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/Helvella-semiobruta1.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Asociada a suelo calcáreo. Sin interés culinario, saprosimbiótica."
+    },
+    {
+      "id": "seta_023",
+      "nombreCientifico": "Helvella iberica",
+      "nombreComun": "Helvella iberica",
+      "imagenUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/602771819/medium.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "saprosimbiota",
+      "tema": "Curso micológico",
+      "descripcion": "Sale en zonas de marzulo (pinares de Pinus sylvestris). Pie lacunoso grisáceo-amarillento y mitra de color azulado. Saprosimbiótica, comestible con doble tratamiento."
+    },
+    {
+      "id": "seta_024",
+      "nombreCientifico": "Daedalopsis nitida",
+      "nombreComun": "Daedalopsis nitida (= Hexagonia)",
+      "imagenUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/358184628/large.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Asociada a madera muerta de alcornoques o encinas. Himenóforo característico con poros de aspecto hexagonal. Se mancha de oscuro con la manipulación. Saprobia, no comestible."
+    },
+    {
+      "id": "seta_025",
+      "nombreCientifico": "Porodaedalea pini",
+      "nombreComun": "Porodaedalea pini (= Phellinus)",
+      "imagenUrl": "https://www.pharmanatur.com/Pagepolypore/Phellinus%20pini%202.JPG",
+      "comestibilidad": "sin-valor",
+      "nutricion": "parasita-facultativa",
+      "tema": "Curso micológico",
+      "descripcion": "Parásito facultativo de todos los pinos. No comestible."
+    },
+    {
+      "id": "seta_026",
+      "nombreCientifico": "Candolleomyces candoleanus",
+      "nombreComun": "Candolleomyces candoleanus (= Psathyrella)",
+      "imagenUrl": "https://www.cromushrooms.eu/images/mushpictures/thumbs/candolleomyces-candolleanus.jpg",
+      "comestibilidad": "toxica",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "No comestible (puede ser tóxica; se ha encontrado psilocibina). Saprobia."
+    },
+    {
+      "id": "seta_027",
+      "nombreCientifico": "Sarcosphaera crassa",
+      "nombreComun": "Sarcosphaera crassa",
+      "imagenUrl": "https://alchetron.com/cdn/sarcosphaera-50f42f08-2392-44a7-8d27-e16f56a1822-resize-750.jpeg",
+      "comestibilidad": "toxica",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Micorrícica, tóxica."
     }
   ]
 }
