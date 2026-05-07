@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { DataProvider } from './context/DataContext';
 import Home from './pages/Home';
 import TestImagenes from './pages/TestImagenes';
@@ -19,6 +20,7 @@ const App: React.FC = () => {
           <Route path="/admin" element={<Admin />} />
         </Routes>
       </DataProvider>
+      <Analytics />
     </BrowserRouter>
   );
 };
