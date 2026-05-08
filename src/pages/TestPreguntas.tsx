@@ -1,26 +1,121 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle, Tag } from 'lucide-react';
 import { useData } from '../context/DataContext';
 import { getRandomPreguntas } from '../data/demo';
 import type { Pregunta, RespuestaPregunta } from '../types';
 
-const NUM_PREGUNTAS = 20;
+const DIFICULTADES = [
+  {
+    id: 'facil',
+    titulo: 'Fácil',
+    cantidad: 15,
+    descripcion: 'Un examen breve para afianzar conceptos básicos.',
+    color: '#dcfce7',
+    accent: '#166534',
+  },
+  {
+    id: 'medio',
+    titulo: 'Medio',
+    cantidad: 25,
+    descripcion: 'Un recorrido más amplio por el contenido del curso.',
+    color: '#fef3c7',
+    accent: '#92400e',
+  },
+  {
+    id: 'dificil',
+    titulo: 'Difícil',
+    cantidad: 40,
+    descripcion: 'Formato largo para simular un examen más exigente.',
+    color: '#fee2e2',
+    accent: '#991b1b',
+  },
+] as const;
+
+type DificultadExamen = (typeof DIFICULTADES)[number];
 
 const LETRAS = ['a', 'b', 'c', 'd', 'e'];
 
 const TestPreguntas: React.FC = () => {
   const navigate = useNavigate();
-  const { preguntas } = useData();
+  const { preguntas, loading } = useData();
 
-  const preguntasDelTest: Pregunta[] = useMemo(
-    () => getRandomPreguntas(preguntas, NUM_PREGUNTAS),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    []
-  );
-
+  const [preguntasDelTest, setPreguntasDelTest] = useState<Pregunta[]>([]);
+  const [dificultadSeleccionada, setDificultadSeleccionada] = useState<DificultadExamen | null>(null);
+  const [cantidadSeleccionada, setCantidadSeleccionada] = useState<number | null>(null);
   const [current, setCurrent] = useState(0);
   const [respuestas, setRespuestas] = useState<Record<string, string>>({});
+
+  const iniciarTest = (dificultad: DificultadExamen) => {
+    setDificultadSeleccionada(dificultad);
+    setCantidadSeleccionada(dificultad.cantidad);
+    setPreguntasDelTest(getRandomPreguntas(preguntas, dificultad.cantidad));
+    setCurrent(0);
+    setRespuestas({});
+  };
+
+  if (!cantidadSeleccionada) {
+    return (
+      <div style={{ minHeight: '100vh', background: 'var(--color-cream)', padding: '2rem 1rem 3rem' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+          <button
+            onClick={() => navigate('/')}
+            style={{
+              background: 'none', border: 'none', cursor: 'pointer', color: '#6b7280',
+              display: 'flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'Poppins, sans-serif',
+              fontSize: '0.875rem', marginBottom: '1.5rem',
+            }}
+          >
+            <ArrowLeft size={16} /> Volver
+          </button>
+
+          <div className="card" style={{ padding: '2rem', marginBottom: '1.5rem' }}>
+            <h1 style={{ margin: '0 0 0.75rem', fontSize: '1.8rem', color: '#111827' }}>Elige la dificultad del examen</h1>
+            <p style={{ margin: 0, color: '#6b7280', fontFamily: 'Poppins, sans-serif', lineHeight: 1.6 }}>
+              Selecciona cuántas preguntas quieres incluir antes de empezar. El test se generará de forma aleatoria a partir del banco actual.
+            </p>
+          </div>
+
+          <div style={{
+            display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+            gap: '1rem',
+          }}>
+            {DIFICULTADES.map((dificultad) => {
+              const disponible = preguntas.length >= dificultad.cantidad;
+              return (
+                <button
+                  key={dificultad.id}
+                        onClick={() => iniciarTest(dificultad)}
+                  disabled={!disponible || loading}
+                  style={{
+                    background: 'white', border: `2px solid ${dificultad.color}`, borderRadius: '1rem',
+                    padding: '1.5rem', textAlign: 'left', cursor: disponible && !loading ? 'pointer' : 'not-allowed',
+                    opacity: disponible && !loading ? 1 : 0.55, boxShadow: '0 8px 24px rgba(0,0,0,0.06)',
+                  }}
+                >
+                  <div style={{
+                    display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+                    minWidth: '72px', padding: '0.35rem 0.7rem', borderRadius: '9999px',
+                    background: dificultad.color, color: dificultad.accent, fontWeight: 700,
+                    fontFamily: 'Poppins, sans-serif', fontSize: '0.8rem', marginBottom: '1rem',
+                  }}>
+                    {dificultad.titulo}
+                  </div>
+                  <h2 style={{ margin: '0 0 0.4rem', fontSize: '1.5rem', color: '#111827' }}>{dificultad.cantidad} preguntas</h2>
+                  <p style={{ margin: '0 0 1rem', color: '#6b7280', fontFamily: 'Poppins, sans-serif', lineHeight: 1.55 }}>
+                    {dificultad.descripcion}
+                  </p>
+                  <div style={{ fontSize: '0.82rem', color: disponible ? dificultad.accent : '#6b7280', fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
+                    {disponible ? 'Disponible' : `Necesitas al menos ${dificultad.cantidad} preguntas en el banco`}
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const pregunta = preguntasDelTest[current];
   const progreso = ((current + 1) / preguntasDelTest.length) * 100;
@@ -40,6 +135,13 @@ const TestPreguntas: React.FC = () => {
         tipo: 'preguntas',
         respuestas: resultado,
         preguntas: preguntasDelTest,
+        examen: dificultadSeleccionada
+          ? {
+              dificultadId: dificultadSeleccionada.id,
+              dificultadTitulo: dificultadSeleccionada.titulo,
+              cantidadPreguntas: dificultadSeleccionada.cantidad,
+            }
+          : undefined,
       },
     });
   };
@@ -69,7 +171,7 @@ const TestPreguntas: React.FC = () => {
         </button>
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem', fontFamily: 'Poppins, sans-serif', fontSize: '0.8rem', color: '#6b7280' }}>
-            <span>Test de preguntas</span>
+            <span>Test de preguntas · {cantidadSeleccionada} preguntas</span>
             <span>{current + 1} / {preguntasDelTest.length} &nbsp;·&nbsp; {respondidas} respondidas</span>
           </div>
           <div className="progress-bar">

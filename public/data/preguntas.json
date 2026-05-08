@@ -519,6 +519,266 @@
       "respuestaCorrecta": "a",
       "tema": "Unidad 2",
       "fuente": "Cuestionario 2"
+    },
+    {
+      "id": "preg_041",
+      "texto": "En relación al material recomendado: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Las navajas se llevan únicamente para preparar el bocadillo o la comida y pelar la fruta, pero no tienen una función específica durante la recolección de setas silvestres." },
+        { "id": "b", "texto": "El bastón es muy importante para ahuyentar a otros recolectores de setas que están cogiendo setas en tu mismo lugar de recolección." },
+        { "id": "c", "texto": "Las cestas son muy importantes para facilitar el transporte de las setas, permitir la aireación y la dispersión de las esporas y evitar la compactación de las setas." },
+        { "id": "d", "texto": "Las bolsas de plástico son muy importantes para facilitar el transporte de las setas por el monte." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_042",
+      "texto": "En relación a la indumentaria recomendada: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los pantalones de trabajo en campo evitan que suframos pinchazos y rasguños en las piernas y también evitan que nos mojemos las piernas." },
+        { "id": "b", "texto": "Las botas de montaña o de senderismo impermeables con suela antideslizante mejoran el agarre al suelo, evitan torceduras de tobillo y evitan que llegues con los pies mojados." },
+        { "id": "c", "texto": "El chubasquero impermeable nos protege del frío y evita que nos mojemos el cuerpo y la cabeza." },
+        { "id": "d", "texto": "Todas las respuestas son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_043",
+      "texto": "En relación al hábitat de los hongos: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos pirófilos son aquellos hongos que provocan alucinaciones en las personas volviéndolos pirados." },
+        { "id": "b", "texto": "Los hongos foliícolas son aquellos hongos que fructifican sobre hojas." },
+        { "id": "c", "texto": "Los hongos queratinofílicos son aquellos hongos que fructifican sobre las raíces de las plantas." },
+        { "id": "d", "texto": "Los hongos terrícolas son aquellos hongos que fructifican bajo tierra." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_044",
+      "texto": "En relación al requerimiento hídrico: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "La mayoría de especies saprobias, la mayoría de especies micorrícicas termófilas y las especies adaptadas a climas áridos y desérticos presentan un ciclo de fructificación corto." },
+        { "id": "b", "texto": "Algunos hongos se han adaptado al exceso de agua de ecosistemas muy húmedos mediante la aparición de formas secotioides y formas gastroides." },
+        { "id": "c", "texto": "Todos los hongos tienen el mismo ciclo de fructificación, por lo que fructifican cuando se dan las condiciones todas las especies al mismo tiempo." },
+        { "id": "d", "texto": "Buenos ejemplos de hongos con ciclo de fructificación largo son el hongo negro (Boletus aereus) y la seta de cardo (Pleurotus eryngii)." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_045",
+      "texto": "En relación al requerimiento hídrico: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "No existe ningún orden de sucesión de especies; los hongos solamente fructifican inmediatamente después de las lluvias." },
+        { "id": "b", "texto": "Hay una hipótesis que dice que, para reducir la pérdida de agua, los hongos epigeos reducen su pie y enrollan el sombrero sobre sí mismos para no exponer su himenio, formando inicialmente formas secotioides y posteriormente reducen más su pie y pasan a vivir bajo tierra formando formas gastroides con el himenio protegido en la gleba por el peridio." },
+        { "id": "c", "texto": "Chlorophyllum agaricoides y Chlorophyllum lusitanicum son dos ejemplos de formas secotioides." },
+        { "id": "d", "texto": "La b y c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_046",
+      "texto": "En relación a la humedad ambiental: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Las especies termófilas y las especies que fructifican en zonas muy áridas como desiertos o zonas arenosas de dunas litorales necesitan elevada humedad relativa para fructificar." },
+        { "id": "b", "texto": "Las especies que fructifican en zonas higroturbosas, turberas y tremedales necesitan baja humedad relativa para fructificar." },
+        { "id": "c", "texto": "Los hongos psicrófilos son aquellos que se desarrollan a bajas temperaturas; muchos de ellos son umbrófilos, por lo que necesitan muchas horas de luz solar." },
+        { "id": "d", "texto": "La higrofanidad es la propiedad de algunos hongos de absorber y exhalar la humedad produciendo cambios de la coloración de la cutícula en función de la humedad ambiental." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_047",
+      "texto": "En relación a la reviviscencia e higrofanidad: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "La reviviscencia es la propiedad de algunos hongos de absorber y exhalar la humedad según el medio en que se encuentran, sin perder su actividad biológica." },
+        { "id": "b", "texto": "Algunos ejemplos de hongos con reviviscencia son Geastrum campestre y Marasmius oreades." },
+        { "id": "c", "texto": "La higrofanidad es la propiedad de algunos hongos de absorber y exhalar la humedad produciendo cambios de la coloración en función de la humedad ambiental." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_048",
+      "texto": "En relación a la temperatura ambiental y del suelo: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos psicrófilos son especies de hongos que se desarrollan a temperaturas altas." },
+        { "id": "b", "texto": "Los hongos termófilos son especies que se desarrollan a bajas temperaturas." },
+        { "id": "c", "texto": "Los hongos psicrófilos generalmente tienen necesidad de muchas horas de luz solar." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_049",
+      "texto": "En relación al pH del suelo: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "El boleto (Boletus edulis) y el huevo de rey (Amanita caesarea) son especies indiferentes al pH, porque pueden fructificar prácticamente en cualquier pH del suelo." },
+        { "id": "b", "texto": "Los hongos basófilos son aquellos que fructifican en pH básico, es decir, inferior a 7." },
+        { "id": "c", "texto": "La harinera (Amanita ovoidea) y el boleto de Satanás (Rubroboletus satanas) son especies basófilas, que fructifican generalmente en suelos con pH básicos, superiores a 7." },
+        { "id": "d", "texto": "Ninguna de las anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_050",
+      "texto": "En relación a algunos factores de fructificación de las setas: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Las caras norte generalmente son más cálidas, por lo que son importantes en épocas de mucho frío o demasiado lluviosas, mientras que las caras sur son más frescas, siendo importantes en épocas de sequía." },
+        { "id": "b", "texto": "El sobrepisoteo excesivo no permite la recuperación de herbáceas y disminuye la aparición de numerosas especies de hongos pratícolas." },
+        { "id": "c", "texto": "A medida que se sube en altitud aumenta la temperatura y, en cambio, al descender en altitud disminuye la temperatura excepto en casos de inversión térmica." },
+        { "id": "d", "texto": "Los hongos de carácter eurosiberiano son aquellos que generalmente fructifican en zonas mediterráneas por debajo de 1200 metros." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_051",
+      "texto": "En relación al viento: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "El viento impide la dispersión de las esporas por anemocoria." },
+        { "id": "b", "texto": "El viento aumenta la humedad ambiental aumentando la producción de setas." },
+        { "id": "c", "texto": "El viento es considerado el amigo público de las setas." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_052",
+      "texto": "En relación a las buenas prácticas de recolección: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En épocas de intenso frío los pinícolas (Boletus pinophilus), los níscalos (Lactarius deliciosus) y las capuchinas (Tricholoma portentosum) fructifican entre las acículas de los pinos, por lo que es recomendable utilizar rastrillos para poderlos localizar." },
+        { "id": "b", "texto": "Es recomendable pisotear y romper las setas tóxicas para evitar que otro recolector las coja por error y sufra una intoxicación." },
+        { "id": "c", "texto": "Es aconsejable recolectar los ejemplares inmaduros porque suelen estar menos parasitados por larvas de insectos." },
+        { "id": "d", "texto": "Se aconseja no recolectar los ejemplares inmaduros porque no han dispersado sus esporas con el objetivo de favorecer la sostenibilidad del recurso micológico. Además, no aportan el mismo valor nutricional y organoléptico que los ejemplares adultos." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_053",
+      "texto": "En relación a las buenas prácticas en el medio: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "Se recomienda prender fuego en el monte, ya que favorece la aparición de especies pirófilas de gran interés comercial como las colmenillas (Morchella spp.)." },
+        { "id": "b", "texto": "Se deben respetar los nidos y madrigueras de animales salvajes." },
+        { "id": "c", "texto": "Se aconseja dejar tirada la basura en el monte, para que se puedan alimentar los animales salvajes." },
+        { "id": "d", "texto": "Es importante poner música a todo volumen y dar gritos en el monte para ahuyentar a los animales salvajes." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_054",
+      "texto": "En relación a las caídas y percances: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En las caídas al suelo durante la recolección de setas puedes sufrir hematomas o heridas, fracturas de huesos e incluso lesiones musculares y de ligamentos." },
+        { "id": "b", "texto": "En la recolección de setas no se producen nunca cortes accidentales con la navaja de setas." },
+        { "id": "c", "texto": "En el monte no hay peligros físicos que puedan provocar una caída, una torcedura de tobillo, unas heridas o quemaduras, o cualquier lesión de otra índole." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_055",
+      "texto": "En relación a los encuentros con animales: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En el caso de encontrarse con un toro bravo durante la recolección de setas, lo más aconsejable es llamarle para hacerle un buen recorte." },
+        { "id": "b", "texto": "En caso de encontrarte con crías de animales es un buen momento para aprovechar y cogerlos y hacerte fotos para las redes sociales con ellos." },
+        { "id": "c", "texto": "En caso de encontrarte con animales domésticos o salvajes se recomienda mantener la distancia de seguridad e ir en grupo." },
+        { "id": "d", "texto": "Los perros no suponen ningún peligro para nosotros, son nuestros fieles amigos." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_056",
+      "texto": "En relación a las mordeduras de culebras: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En caso de mordedura de una culebra lo más importante es capturar a la culebra para poder determinar la especie." },
+        { "id": "b", "texto": "En casos graves de mordeduras de culebras no es necesario ningún antídoto, ya que no se producen en ningún caso reacciones anafilácticas." },
+        { "id": "c", "texto": "Por suerte, a diferencia de otros países, en España no hay víboras." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_057",
+      "texto": "En relación a las pérdidas y extravíos: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "No es recomendable, si vas a un monte a recolectar setas, portar un móvil con programas de GPS o geolocalización o un dispositivo GPS, ya que cualquier persona se puede orientar fácilmente." },
+        { "id": "b", "texto": "Los principales programas más utilizados para geolocalización en el móvil son OruxMaps GP, Google Maps, Mapas de España y Wikiloc." },
+        { "id": "c", "texto": "En el monte es imposible desorientarse ya que los animales salvajes te guían por el camino." },
+        { "id": "d", "texto": "En el bosque no se producen pérdidas de objetos personales ya que nadie lleva objetos de valor." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_058",
+      "texto": "En relación al protocolo de primeros auxilios: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "El protocolo de primeros auxilios es el conjunto de actuaciones o técnicas que permiten la atención inmediata de un accidentado hasta que llegue la asistencia médica profesional, con el fin de que las lesiones que ha sufrido no empeoren." },
+        { "id": "b", "texto": "La conducta PAS consiste en pasar del accidentado porque puede ser agresivo, asaltarle para robarle el dinero y sus pertenencias si pide ayuda y salir corriendo si está inconsciente por miedo a la situación." },
+        { "id": "c", "texto": "La conducta PAS consiste en Proteger, Avisar y Socorrer." },
+        { "id": "d", "texto": "La a y la c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_059",
+      "texto": "En relación al botiquín de primeros auxilios: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "En el botiquín de primeros auxilios se recomienda llevar antisépticos para prevenir una infección en caso de herida." },
+        { "id": "b", "texto": "En el botiquín de primeros auxilios se recomienda llevar diferentes elementos para curar heridas como agua oxigenada, gasas esterilizadas, esparadrapo y tiritas." },
+        { "id": "c", "texto": "En el botiquín de primeros auxilios se aconseja portar vendas hemostáticas de diferentes tamaños para controlar hemorragias si es necesario." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_060",
+      "texto": "En relación a las maniobras de primeros auxilios: ¿cuál de las siguientes afirmaciones es correcta?",
+      "opciones": [
+        { "id": "a", "texto": "La maniobra de reanimación cardiopulmonar es una técnica de primeros auxilios de emergencia que se utiliza para salvar vidas cuando una persona ha dejado de respirar o su corazón ha dejado de latir." },
+        { "id": "b", "texto": "La maniobra de Heimlich es un procedimiento de primeros auxilios vital para desobstruir la vía aérea bloqueada por un objeto o alimento." },
+        { "id": "c", "texto": "Las maniobras de reanimación cardiopulmonar y la maniobra de Heimlich son técnicas de primeros auxilios que no salvan vidas." },
+        { "id": "d", "texto": "La a y b son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 3",
+      "fuente": "Cuestionario 3"
     }
   ]
 }

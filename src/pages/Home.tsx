@@ -55,7 +55,7 @@ const Home: React.FC = () => {
         {[
           { icon: '🍄', label: 'Setas disponibles', value: loading ? '...' : setas.length },
           { icon: '❓', label: 'Preguntas en banco', value: loading ? '...' : preguntas.length },
-          { icon: '🎯', label: 'Preguntas por test', value: 20 },
+          { icon: '🎯', label: 'Preguntas por test', value: '15-40' },
           { icon: '🖼️', label: 'Imágenes por test', value: 15 },
         ].map((stat) => (
           <div key={stat.label} style={{ textAlign: 'center' }}>
@@ -162,10 +162,10 @@ const Home: React.FC = () => {
             Test de Preguntas
           </h2>
           <p style={{ margin: '0 0 1.25rem', color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem', lineHeight: 1.5 }}>
-            Responde 20 preguntas tipo test extraídas del material del curso. Cada pregunta indica el tema al que corresponde.
+            Elige un examen fácil, medio o difícil y responde entre 15 y 40 preguntas tipo test extraídas del material del curso.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-            {['20 preguntas', 'Aleatorias', 'Con corrección'].map((tag) => (
+            {['15 / 25 / 40 preguntas', 'Aleatorias', 'Con corrección'].map((tag) => (
               <span key={tag} style={{
                 background: '#fef3c7', color: '#92400e',
                 padding: '0.25rem 0.6rem', borderRadius: '9999px',

@@ -128,9 +128,17 @@ const ImagenesResults: React.FC<ImagenesResultsProps> = ({ respuestas, setas }) 
 interface PreguntasResultsProps {
   respuestas: RespuestaPregunta[];
   preguntas: Pregunta[];
+  examen?: ExamenInfo;
 }
 
-const PreguntasResults: React.FC<PreguntasResultsProps> = ({ respuestas, preguntas }) => {
+const PERFECT_SCORE_MESSAGES: Record<string, string> = {
+  facil: 'Pleno en modo fácil. El bosque te ha guiñado un ojo y tú le has devuelto un examen impecable.',
+  medio: 'Pleno en modo medio. Ya no pareces alumno: pareces la persona que redactó las preguntas en una noche especialmente productiva.',
+  dificil: 'Pleno en modo difícil. Esto ya no es estudiar micología; esto es intimidar a Javier con la mirada.',
+  default: 'Pleno absoluto. Si soplas, probablemente dispersas esporas con autoridad académica.',
+};
+
+const PreguntasResults: React.FC<PreguntasResultsProps> = ({ respuestas, preguntas, examen }) => {
   const [expanded, setExpanded] = useState<string | null>(null);
 
   const scored = preguntas.map((p) => {
@@ -142,10 +150,21 @@ const PreguntasResults: React.FC<PreguntasResultsProps> = ({ respuestas, pregunt
 
   const aciertos = scored.filter((s) => s.isOk).length;
   const porcentaje = Math.round((aciertos / preguntas.length) * 100);
+  const examenPerfecto = preguntas.length > 0 && aciertos === preguntas.length;
+  const perfectMessage = examenPerfecto
+    ? PERFECT_SCORE_MESSAGES[examen?.dificultadId ?? 'default'] ?? PERFECT_SCORE_MESSAGES.default
+    : undefined;
 
   return (
     <div>
-      <ScoreHeader puntos={aciertos} max={preguntas.length} porcentaje={porcentaje} label="preguntas" />
+      <ScoreHeader
+        puntos={aciertos}
+        max={preguntas.length}
+        porcentaje={porcentaje}
+        label="preguntas"
+        badgeLabel={examen ? `${examen.dificultadTitulo} · ${examen.cantidadPreguntas} preguntas` : undefined}
+        perfectMessage={perfectMessage}
+      />
       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
         {scored.map(({ p, seleccionada, isOk }, i) => {
           const isOpen = expanded === p.id;
@@ -228,9 +247,11 @@ interface ScoreHeaderProps {
   max: number;
   porcentaje: number;
   label: string;
+  badgeLabel?: string;
+  perfectMessage?: string;
 }
 
-const ScoreHeader: React.FC<ScoreHeaderProps> = ({ puntos, max, porcentaje, label }) => {
+const ScoreHeader: React.FC<ScoreHeaderProps> = ({ puntos, max, porcentaje, label, badgeLabel, perfectMessage }) => {
   const color = porcentaje >= 70 ? '#16a34a' : porcentaje >= 50 ? '#d97706' : '#dc2626';
   const emoji = porcentaje >= 70 ? '🎉' : porcentaje >= 50 ? '💪' : '📚';
   const msg = porcentaje >= 70 ? '¡Excelente trabajo!' : porcentaje >= 50 ? '¡Buen progreso!' : 'Sigue estudiando';
@@ -241,6 +262,16 @@ const ScoreHeader: React.FC<ScoreHeaderProps> = ({ puntos, max, porcentaje, labe
       padding: '2rem', textAlign: 'center', marginBottom: '1.5rem',
       boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
     }}>
+      {badgeLabel && (
+        <div style={{
+          display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+          padding: '0.35rem 0.8rem', borderRadius: '9999px', marginBottom: '1rem',
+          background: '#ecfccb', color: '#3f6212', fontFamily: 'Poppins, sans-serif',
+          fontSize: '0.78rem', fontWeight: 700,
+        }}>
+          {badgeLabel}
+        </div>
+      )}
       <div style={{ fontSize: '3rem', marginBottom: '0.5rem' }}>{emoji}</div>
       <h2 style={{ margin: '0 0 0.25rem', color }}>{msg}</h2>
       <p style={{ margin: '0 0 1.25rem', color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem' }}>
@@ -259,6 +290,23 @@ const ScoreHeader: React.FC<ScoreHeaderProps> = ({ puntos, max, porcentaje, labe
           }} />
         </div>
       </div>
+      {perfectMessage && (
+        <div style={{
+          marginTop: '1.25rem', padding: '1rem 1.1rem', borderRadius: '1rem',
+          background: 'linear-gradient(135deg, #ecfccb, #fef9c3)', border: '1px solid #bef264',
+          textAlign: 'left',
+        }}>
+          <div style={{ fontSize: '0.78rem', fontWeight: 800, color: '#3f6212', marginBottom: '0.35rem', fontFamily: 'Poppins, sans-serif', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+            Pleno micológico
+          </div>
+          <div style={{ color: '#365314', fontWeight: 700, marginBottom: '0.35rem' }}>
+            No has fallado ni una.
+          </div>
+          <p style={{ margin: 0, color: '#4d7c0f', fontFamily: 'Poppins, sans-serif', lineHeight: 1.6, fontSize: '0.92rem' }}>
+            {perfectMessage}
+          </p>
+        </div>
+      )}
     </div>
   );
 };
@@ -305,6 +353,13 @@ interface LocationState {
   respuestas: RespuestaSeta[] | RespuestaPregunta[];
   setas?: Seta[];
   preguntas?: Pregunta[];
+  examen?: ExamenInfo;
+}
+
+interface ExamenInfo {
+  dificultadId: string;
+  dificultadTitulo: string;
+  cantidadPreguntas: number;
 }
 
 const Resultados: React.FC = () => {
@@ -358,6 +413,7 @@ const Resultados: React.FC = () => {
           <PreguntasResults
             respuestas={state.respuestas as RespuestaPregunta[]}
             preguntas={state.preguntas}
+            examen={state.examen}
           />
         ) : null}
       </div>
