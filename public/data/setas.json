@@ -269,6 +269,106 @@
       "nutricion": "micorricica",
       "tema": "Curso micológico",
       "descripcion": "Micorrícica, tóxica."
+    },
+    {
+      "id": "seta_028",
+      "nombreCientifico": "Phaeomarasmius erinaceus",
+      "nombreComun": "Phaeomarasmius erinaceus",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/Phaeomarasmius-erinaceus3.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "No comestible, saprobia. Muy pequeña, con láminas de arista blanca."
+    },
+    {
+      "id": "seta_029",
+      "nombreCientifico": "Agrocybe praecox",
+      "nombreComun": "Precoz",
+      "imagenUrl": "https://www.first-nature.com/fungi/images/strophariaceae/agrocybe-praecox1.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Precoz. Saprobia; en la base del pie suele presentar rizoides. Sin valor culinario."
+    },
+    {
+      "id": "seta_030",
+      "nombreCientifico": "Russula vesca",
+      "nombreComun": "Russula vesca",
+      "imagenUrl": "https://www.hautesavoiephotos.com/champis/russula_vesca_01.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Muy buen comestible, micorrícica. 'Enseña los dientes': la cutícula es retráctil y deja entrever las láminas, que son friables. Fructifica con fagáceas en suelos ácidos."
+    },
+    {
+      "id": "seta_031",
+      "nombreCientifico": "Pleurotus eryngii var. ferulae",
+      "nombreComun": "Seta de caña",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/Pleurotus-eryngii-var.ferulae1.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobia, comestible. Tiene más porte y tonos más marrones que la seta de cardo normal; suele salir sobre raíces secas de hinojo y caña."
+    },
+    {
+      "id": "seta_032",
+      "nombreCientifico": "Rhizopogon roseolus",
+      "nombreComun": "Rhizopogon roseolus",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/1-rhizopogon-roseolus.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Comestible y comercializable en España, micorrícica asociada a pinos e indiferente al tipo de suelo. Piel muy fina que se mancha de morado, con tendencia a agrietarse; gleba alveolada que acaba verde y abundantes rizomorfos."
+    },
+    {
+      "id": "seta_033",
+      "nombreCientifico": "Amanita mairei",
+      "nombreComun": "Amanita mairei",
+      "imagenUrl": "https://www.fichasmicologicas.com/typo3temp/pics/4e3d903a48.jpg",
+      "comestibilidad": "doble-preparacion",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Micorrícica de pino rodeno, comestible previo tratamiento. Amanita muy común en suelos ácidos de Guadalajara; del grupo vaginata, con cutícula grisácea, margen estriado, volva grande membranosa y saciforme, y sin anillo."
+    },
+    {
+      "id": "seta_034",
+      "nombreCientifico": "Lentinus arcularius",
+      "nombreComun": "Lentinus arcularius",
+      "imagenUrl": "https://micoex.org/wp-content/uploads/stories/Polyporus-arcularius3.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobio, sin valor culinario. Presenta poros grandes y angulosos, margen ciliado y la base del pie siempre negra."
+    },
+    {
+      "id": "seta_035",
+      "nombreCientifico": "Cerioporus meridionalis",
+      "nombreComun": "Cerioporus meridionalis",
+      "imagenUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Polyporus_meridionalis_607564.jpg/1280px-Polyporus_meridionalis_607564.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "saprobia",
+      "tema": "Curso micológico",
+      "descripcion": "Saprobio, sin valor culinario. Se diferencia del anterior porque no tiene margen ciliado y su cutícula es más oscura y escamosa; aparece sobre restos de arbustos como jaras o romero."
+    },
+    {
+      "id": "seta_036",
+      "nombreCientifico": "Chroogomphus mediterraneus",
+      "nombreComun": "Chroogomphus mediterraneus",
+      "imagenUrl": "https://www.salvatoresaitta.it/fungi/chroogomphusmediterraneus01.jpg",
+      "comestibilidad": "comestible",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Comestible, micorrícica. Es mayoritaria en CLM sobre suelos calcáreos y asociada a varias especies de Pinus; tiene micelio amarillo y puede parasitar el micelio de Rhizopogon. Se diferencia de C. rutilus por tener este último micelio blanco."
+    },
+    {
+      "id": "seta_037",
+      "nombreCientifico": "Astraeus hygrometricus",
+      "nombreComun": "Astraeus hygrometricus",
+      "imagenUrl": "https://www.first-nature.com/fungi/images/diplocystidiaceae/astraeus-hygrometricus5.jpg",
+      "comestibilidad": "sin-valor",
+      "nutricion": "micorricica",
+      "tema": "Curso micológico",
+      "descripcion": "Micorrícica de fagáceas y jaras, sin valor culinario."
     }
   ]
 }
