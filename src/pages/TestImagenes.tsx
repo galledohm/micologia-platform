@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle } from 'lucide-react';
 import { useData } from '../context/DataContext';
 import { getRandomSetas } from '../data/demo';
@@ -15,9 +15,14 @@ interface Respuesta {
   nutricion: Nutricion | '';
 }
 
+type TestImagenesModo = 'examen' | 'repaso';
+
 const TestImagenes: React.FC = () => {
   const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const { setas } = useData();
+  const modo: TestImagenesModo = searchParams.get('modo') === 'repaso' ? 'repaso' : 'examen';
+  const isRepaso = modo === 'repaso';
 
   const setasDelTest: Seta[] = useMemo(
     () => getRandomSetas(setas, NUM_SETAS),
@@ -86,12 +91,30 @@ const TestImagenes: React.FC = () => {
         </button>
         <div style={{ flex: 1 }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.35rem', fontFamily: 'Poppins, sans-serif', fontSize: '0.8rem', color: '#6b7280' }}>
-            <span>Test de imágenes</span>
+            <span>Test de imágenes · {isRepaso ? 'Repaso' : 'Examen'}</span>
             <span>{current + 1} / {setasDelTest.length}</span>
           </div>
           <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${progreso}%` }} />
           </div>
+        </div>
+        <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+          <button
+            type="button"
+            className="btn-secondary"
+            onClick={() => navigate('/test-imagenes?modo=repaso')}
+            style={{ padding: '0.55rem 0.9rem', opacity: isRepaso ? 1 : 0.75 }}
+          >
+            Repaso
+          </button>
+          <button
+            type="button"
+            className="btn-primary"
+            onClick={() => navigate('/test-imagenes?modo=examen')}
+            style={{ padding: '0.55rem 0.9rem', opacity: isRepaso ? 0.75 : 1 }}
+          >
+            Examen
+          </button>
         </div>
       </div>
 
@@ -122,83 +145,141 @@ const TestImagenes: React.FC = () => {
               padding: '1.5rem 1.25rem 0.75rem',
               color: 'white', fontFamily: 'Poppins, sans-serif', fontSize: '0.75rem',
             }}>
-              Identifica esta seta
+              {isRepaso ? 'Consulta la ficha completa de esta seta' : 'Identifica esta seta'}
             </div>
           </div>
 
-          {/* Form */}
           <div style={{ padding: '1.5rem' }}>
-            {/* Nombre científico */}
-            <div style={{ marginBottom: '1.25rem' }}>
-              <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
-                Nombre científico
-              </label>
-              <input
-                type="text"
-                value={respuesta.nombreCientifico}
-                onChange={(e) => updateRespuesta('nombreCientifico', e.target.value)}
-                placeholder="Género especie"
-                style={{
-                  width: '100%', padding: '0.75rem 1rem',
-                  border: '2px solid #e5e7eb', borderRadius: '0.75rem',
-                  fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
-                  outline: 'none', transition: 'border-color 0.15s',
-                  boxSizing: 'border-box',
-                }}
-                onFocus={(e) => (e.target.style.borderColor = 'var(--color-moss)')}
-                onBlur={(e) => (e.target.style.borderColor = '#e5e7eb')}
-              />
-            </div>
+            {isRepaso ? (
+              <div style={{ display: 'grid', gap: '1rem' }}>
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.35rem' }}>
+                    Nombre científico
+                  </div>
+                  <div style={{ fontSize: '1.35rem', color: '#111827', fontStyle: 'italic' }}>
+                    {seta.nombreCientifico}
+                  </div>
+                </div>
 
-            {/* Comestibilidad */}
-            <div style={{ marginBottom: '1.25rem' }}>
-              <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
-                Comestibilidad
-              </label>
-              <select
-                value={respuesta.comestibilidad}
-                onChange={(e) => updateRespuesta('comestibilidad', e.target.value)}
-                style={{
-                  width: '100%', padding: '0.75rem 1rem',
-                  border: '2px solid #e5e7eb', borderRadius: '0.75rem',
-                  fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
-                  outline: 'none', appearance: 'none', background: 'white',
-                  cursor: 'pointer', boxSizing: 'border-box',
-                  color: respuesta.comestibilidad === '' ? '#9ca3af' : '#111827',
-                }}
-              >
-                <option value="">Selecciona una opción...</option>
-                {(Object.entries(COMESTIBILIDAD_LABELS) as [Comestibilidad, string][]).map(([val, label]) => (
-                  <option key={val} value={val}>{label}</option>
-                ))}
-              </select>
-            </div>
+                <div>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.35rem' }}>
+                    Nombre común
+                  </div>
+                  <div style={{ fontSize: '1rem', color: '#111827', fontFamily: 'Poppins, sans-serif' }}>
+                    {seta.nombreComun}
+                  </div>
+                </div>
 
-            {/* Nutrición */}
-            <div style={{ marginBottom: '1.5rem' }}>
-              <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
-                Tipo de nutrición
-              </label>
-              <select
-                value={respuesta.nutricion}
-                onChange={(e) => updateRespuesta('nutricion', e.target.value)}
-                style={{
-                  width: '100%', padding: '0.75rem 1rem',
-                  border: '2px solid #e5e7eb', borderRadius: '0.75rem',
-                  fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
-                  outline: 'none', appearance: 'none', background: 'white',
-                  cursor: 'pointer', boxSizing: 'border-box',
-                  color: respuesta.nutricion === '' ? '#9ca3af' : '#111827',
-                }}
-              >
-                <option value="">Selecciona una opción...</option>
-                {(Object.entries(NUTRICION_LABELS) as [Nutricion, string][]).map(([val, label]) => (
-                  <option key={val} value={val}>{label}</option>
-                ))}
-              </select>
-            </div>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '0.75rem' }}>
+                  <div style={{ background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '0.9rem', padding: '1rem' }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.4rem' }}>
+                      Comestibilidad
+                    </div>
+                    <div style={{ fontSize: '0.98rem', color: '#111827', fontFamily: 'Poppins, sans-serif' }}>
+                      {COMESTIBILIDAD_LABELS[seta.comestibilidad]}
+                    </div>
+                  </div>
+                  <div style={{ background: '#f9fafb', border: '1px solid #e5e7eb', borderRadius: '0.9rem', padding: '1rem' }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.4rem' }}>
+                      Nutrición
+                    </div>
+                    <div style={{ fontSize: '0.98rem', color: '#111827', fontFamily: 'Poppins, sans-serif' }}>
+                      {NUTRICION_LABELS[seta.nutricion]}
+                    </div>
+                  </div>
+                </div>
 
-            {/* Navigation */}
+                <div style={{ background: '#f6f6ed', border: '1px solid #e2e8cf', borderRadius: '0.9rem', padding: '1rem' }}>
+                  <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.4rem' }}>
+                    Tema
+                  </div>
+                  <div style={{ fontSize: '0.98rem', color: '#111827', fontFamily: 'Poppins, sans-serif' }}>
+                    {seta.tema}
+                  </div>
+                </div>
+
+                {seta.descripcion && (
+                  <div style={{ background: 'white', border: '1px solid #e5e7eb', borderRadius: '0.9rem', padding: '1rem' }}>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#6b7280', marginBottom: '0.4rem' }}>
+                      Descripción
+                    </div>
+                    <div style={{ fontSize: '0.95rem', color: '#374151', fontFamily: 'Poppins, sans-serif', lineHeight: 1.6 }}>
+                      {seta.descripcion}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <>
+                <div style={{ marginBottom: '1.25rem' }}>
+                  <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
+                    Nombre científico
+                  </label>
+                  <input
+                    type="text"
+                    value={respuesta.nombreCientifico}
+                    onChange={(e) => updateRespuesta('nombreCientifico', e.target.value)}
+                    placeholder="Género especie"
+                    style={{
+                      width: '100%', padding: '0.75rem 1rem',
+                      border: '2px solid #e5e7eb', borderRadius: '0.75rem',
+                      fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
+                      outline: 'none', transition: 'border-color 0.15s',
+                      boxSizing: 'border-box',
+                    }}
+                    onFocus={(e) => (e.target.style.borderColor = 'var(--color-moss)')}
+                    onBlur={(e) => (e.target.style.borderColor = '#e5e7eb')}
+                  />
+                </div>
+
+                <div style={{ marginBottom: '1.25rem' }}>
+                  <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
+                    Comestibilidad
+                  </label>
+                  <select
+                    value={respuesta.comestibilidad}
+                    onChange={(e) => updateRespuesta('comestibilidad', e.target.value)}
+                    style={{
+                      width: '100%', padding: '0.75rem 1rem',
+                      border: '2px solid #e5e7eb', borderRadius: '0.75rem',
+                      fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
+                      outline: 'none', appearance: 'none', background: 'white',
+                      cursor: 'pointer', boxSizing: 'border-box',
+                      color: respuesta.comestibilidad === '' ? '#9ca3af' : '#111827',
+                    }}
+                  >
+                    <option value="">Selecciona una opción...</option>
+                    {(Object.entries(COMESTIBILIDAD_LABELS) as [Comestibilidad, string][]).map(([val, label]) => (
+                      <option key={val} value={val}>{label}</option>
+                    ))}
+                  </select>
+                </div>
+
+                <div style={{ marginBottom: '1.5rem' }}>
+                  <label style={{ display: 'block', fontWeight: 600, fontSize: '0.875rem', marginBottom: '0.4rem', color: '#374151' }}>
+                    Tipo de nutrición
+                  </label>
+                  <select
+                    value={respuesta.nutricion}
+                    onChange={(e) => updateRespuesta('nutricion', e.target.value)}
+                    style={{
+                      width: '100%', padding: '0.75rem 1rem',
+                      border: '2px solid #e5e7eb', borderRadius: '0.75rem',
+                      fontFamily: 'Poppins, sans-serif', fontSize: '0.95rem',
+                      outline: 'none', appearance: 'none', background: 'white',
+                      cursor: 'pointer', boxSizing: 'border-box',
+                      color: respuesta.nutricion === '' ? '#9ca3af' : '#111827',
+                    }}
+                  >
+                    <option value="">Selecciona una opción...</option>
+                    {(Object.entries(NUTRICION_LABELS) as [Nutricion, string][]).map(([val, label]) => (
+                      <option key={val} value={val}>{label}</option>
+                    ))}
+                  </select>
+                </div>
+              </>
+            )}
+
             <div style={{ display: 'flex', justifyContent: 'space-between', gap: '0.75rem', flexWrap: 'wrap' }}>
               <button
                 className="btn-secondary"
@@ -219,15 +300,14 @@ const TestImagenes: React.FC = () => {
               ) : (
                 <button
                   className="btn-primary"
-                  onClick={handleFinish}
-                  style={{ background: allAnswered ? '#16a34a' : undefined }}
+                  onClick={isRepaso ? () => navigate('/') : handleFinish}
+                  style={{ background: !isRepaso && allAnswered ? '#16a34a' : undefined }}
                 >
-                  <CheckCircle size={16} /> Ver resultados
+                  <CheckCircle size={16} /> {isRepaso ? 'Terminar repaso' : 'Ver resultados'}
                 </button>
               )}
             </div>
 
-            {/* Dot navigator */}
             <div style={{ display: 'flex', justifyContent: 'center', gap: '0.4rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
               {setasDelTest.map((_, i) => {
                 const answered = respuestas[i].nombreCientifico !== '' && respuestas[i].comestibilidad !== '' && respuestas[i].nutricion !== '';
@@ -240,9 +320,9 @@ const TestImagenes: React.FC = () => {
                       border: 'none', cursor: 'pointer', padding: 0,
                       background: i === current
                         ? 'var(--color-forest)'
-                        : answered ? 'var(--color-sage)' : '#d1d5db',
+                        : isRepaso ? 'var(--color-sage)' : answered ? 'var(--color-sage)' : '#d1d5db',
                     }}
-                    title={`Seta ${i + 1}${answered ? ' (respondida)' : ''}`}
+                    title={isRepaso ? `${setasDelTest[i].nombreCientifico}` : `Seta ${i + 1}${answered ? ' (respondida)' : ''}`}
                   />
                 );
               })}

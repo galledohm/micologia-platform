@@ -3,6 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { Camera, FileQuestion, Shield, BookOpen } from 'lucide-react';
 import { useData } from '../context/DataContext';
 
+const imageTestCardStyle: React.CSSProperties = {
+  background: 'white', border: 'none', borderRadius: '1.25rem',
+  padding: '2rem', boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
+  transition: 'transform 0.2s, box-shadow 0.2s', textAlign: 'left',
+};
+
 const Home: React.FC = () => {
   const navigate = useNavigate();
   const { setas, preguntas, loading } = useData();
@@ -80,25 +86,20 @@ const Home: React.FC = () => {
         gap: '1.5rem',
       }}>
         {/* Test de imágenes */}
-        <button
-          onClick={() => navigate('/test-imagenes')}
-          disabled={loading || setas.length === 0}
+        <div
           style={{
-            background: 'white', border: 'none', borderRadius: '1.25rem',
-            padding: '2rem', cursor: loading || setas.length === 0 ? 'not-allowed' : 'pointer',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-            transition: 'transform 0.2s, box-shadow 0.2s',
-            textAlign: 'left', opacity: loading || setas.length === 0 ? 0.6 : 1,
+            ...imageTestCardStyle,
+            opacity: loading || setas.length === 0 ? 0.6 : 1,
           }}
-          onMouseEnter={(e) => {
+          onMouseEnter={(e: React.MouseEvent<HTMLDivElement>) => {
             if (!loading && setas.length > 0) {
-              (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-4px)';
-              (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 8px 30px rgba(0,0,0,0.14)';
+              (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-4px)';
+              (e.currentTarget as HTMLDivElement).style.boxShadow = '0 8px 30px rgba(0,0,0,0.14)';
             }
           }}
-          onMouseLeave={(e) => {
-            (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)';
-            (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
+          onMouseLeave={(e: React.MouseEvent<HTMLDivElement>) => {
+            (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
+            (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
           }}
         >
           <div style={{
@@ -115,8 +116,28 @@ const Home: React.FC = () => {
           <p style={{ margin: '0 0 1.25rem', color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem', lineHeight: 1.5 }}>
             Identifica 15 setas a partir de fotografías. Indica su nombre científico, comestibilidad y tipo de nutrición.
           </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: '0.75rem', marginBottom: '1.25rem' }}>
+            <button
+              type="button"
+              onClick={() => navigate('/test-imagenes?modo=repaso')}
+              disabled={loading || setas.length === 0}
+              className="btn-secondary"
+              style={{ justifyContent: 'center', opacity: loading || setas.length === 0 ? 0.7 : 1 }}
+            >
+              Repaso
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate('/test-imagenes?modo=examen')}
+              disabled={loading || setas.length === 0}
+              className="btn-primary"
+              style={{ justifyContent: 'center', opacity: loading || setas.length === 0 ? 0.7 : 1 }}
+            >
+              Examen
+            </button>
+          </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-            {['15 setas', 'Identificación visual', 'Con corrección'].map((tag) => (
+            {['15 setas', 'Repaso o examen', 'Con corrección en examen'].map((tag) => (
               <span key={tag} style={{
                 background: '#e8f5e9', color: '#2d5a27',
                 padding: '0.25rem 0.6rem', borderRadius: '9999px',
@@ -126,7 +147,7 @@ const Home: React.FC = () => {
               </span>
             ))}
           </div>
-        </button>
+        </div>
 
         {/* Test de preguntas */}
         <button
@@ -139,13 +160,13 @@ const Home: React.FC = () => {
             transition: 'transform 0.2s, box-shadow 0.2s',
             textAlign: 'left', opacity: loading || preguntas.length === 0 ? 0.6 : 1,
           }}
-          onMouseEnter={(e) => {
+          onMouseEnter={(e: React.MouseEvent<HTMLButtonElement>) => {
             if (!loading && preguntas.length > 0) {
               (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-4px)';
               (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 8px 30px rgba(0,0,0,0.14)';
             }
           }}
-          onMouseLeave={(e) => {
+          onMouseLeave={(e: React.MouseEvent<HTMLButtonElement>) => {
             (e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)';
             (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 20px rgba(0,0,0,0.08)';
           }}
