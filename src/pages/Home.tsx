@@ -183,7 +183,7 @@ const Home: React.FC = () => {
             Test de Preguntas
           </h2>
           <p style={{ margin: '0 0 1.25rem', color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem', lineHeight: 1.5 }}>
-            Elige un examen fácil, medio o difícil y responde entre 15 y 40 preguntas tipo test extraídas del material del curso.
+            Elige los temas que quieres incluir, selecciona la dificultad y responde entre 15 y 40 preguntas tipo test extraídas del material del curso.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
             {['15 / 25 / 40 preguntas', 'Aleatorias', 'Con corrección'].map((tag) => (

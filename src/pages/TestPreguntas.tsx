@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CheckCircle, Tag } from 'lucide-react';
 import { useData } from '../context/DataContext';
@@ -40,16 +40,52 @@ const TestPreguntas: React.FC = () => {
   const navigate = useNavigate();
   const { preguntas, loading } = useData();
 
+  const temasDisponibles = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          preguntas
+            .map((p) => p.tema?.trim())
+            .filter((tema): tema is string => Boolean(tema))
+        )
+      ).sort((a, b) => a.localeCompare(b, 'es')),
+    [preguntas]
+  );
+
   const [preguntasDelTest, setPreguntasDelTest] = useState<Pregunta[]>([]);
+  const [temasSeleccionados, setTemasSeleccionados] = useState<string[]>([]);
   const [dificultadSeleccionada, setDificultadSeleccionada] = useState<DificultadExamen | null>(null);
   const [cantidadSeleccionada, setCantidadSeleccionada] = useState<number | null>(null);
   const [current, setCurrent] = useState(0);
   const [respuestas, setRespuestas] = useState<Record<string, string>>({});
 
+  useEffect(() => {
+    setTemasSeleccionados((prev) => {
+      if (temasDisponibles.length === 0) return [];
+      if (prev.length === 0) return temasDisponibles;
+
+      const temasVigentes = prev.filter((tema) => temasDisponibles.includes(tema));
+      return temasVigentes.length > 0 ? temasVigentes : temasDisponibles;
+    });
+  }, [temasDisponibles]);
+
+  const preguntasFiltradas = useMemo(
+    () => preguntas.filter((p) => temasSeleccionados.includes(p.tema?.trim())),
+    [preguntas, temasSeleccionados]
+  );
+
+  const toggleTema = (tema: string) => {
+    setTemasSeleccionados((prev) =>
+      prev.includes(tema)
+        ? prev.filter((t) => t !== tema)
+        : [...prev, tema]
+    );
+  };
+
   const iniciarTest = (dificultad: DificultadExamen) => {
     setDificultadSeleccionada(dificultad);
     setCantidadSeleccionada(dificultad.cantidad);
-    setPreguntasDelTest(getRandomPreguntas(preguntas, dificultad.cantidad));
+    setPreguntasDelTest(getRandomPreguntas(preguntasFiltradas, dificultad.cantidad));
     setCurrent(0);
     setRespuestas({});
   };
@@ -72,8 +108,74 @@ const TestPreguntas: React.FC = () => {
           <div className="card" style={{ padding: '2rem', marginBottom: '1.5rem' }}>
             <h1 style={{ margin: '0 0 0.75rem', fontSize: '1.8rem', color: '#111827' }}>Elige la dificultad del examen</h1>
             <p style={{ margin: 0, color: '#6b7280', fontFamily: 'Poppins, sans-serif', lineHeight: 1.6 }}>
-              Selecciona cuántas preguntas quieres incluir antes de empezar. El test se generará de forma aleatoria a partir del banco actual.
+              Selecciona primero los temas y después la dificultad. El test se generará de forma aleatoria con preguntas de los temas marcados.
             </p>
+          </div>
+
+          <div className="card" style={{ padding: '1.5rem 1.75rem', marginBottom: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap', marginBottom: '0.8rem' }}>
+              <h2 style={{ margin: 0, fontSize: '1.1rem', color: '#111827' }}>Temas incluidos</h2>
+              <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+                <button
+                  type="button"
+                  onClick={() => setTemasSeleccionados(temasDisponibles)}
+                  disabled={temasDisponibles.length === 0}
+                  className="btn-secondary"
+                  style={{ fontSize: '0.75rem', padding: '0.35rem 0.65rem' }}
+                >
+                  Seleccionar todos
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setTemasSeleccionados([])}
+                  disabled={temasSeleccionados.length === 0}
+                  className="btn-secondary"
+                  style={{ fontSize: '0.75rem', padding: '0.35rem 0.65rem' }}
+                >
+                  Limpiar
+                </button>
+              </div>
+            </div>
+
+            {temasDisponibles.length === 0 ? (
+              <p style={{ margin: 0, color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.9rem' }}>
+                No hay temas disponibles en el banco de preguntas.
+              </p>
+            ) : (
+              <>
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.55rem', marginBottom: '0.9rem' }}>
+                  {temasDisponibles.map((tema) => {
+                    const selected = temasSeleccionados.includes(tema);
+                    const preguntasTema = preguntas.filter((p) => p.tema?.trim() === tema).length;
+                    return (
+                      <button
+                        key={tema}
+                        type="button"
+                        onClick={() => toggleTema(tema)}
+                        style={{
+                          border: `1.5px solid ${selected ? '#4a7c59' : '#d1d5db'}`,
+                          background: selected ? '#e8f5e9' : '#ffffff',
+                          color: selected ? '#1f4e2f' : '#4b5563',
+                          borderRadius: '9999px',
+                          padding: '0.4rem 0.7rem',
+                          fontFamily: 'Poppins, sans-serif',
+                          fontSize: '0.78rem',
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                        }}
+                      >
+                        {selected ? '✓ ' : ''}{tema} ({preguntasTema})
+                      </button>
+                    );
+                  })}
+                </div>
+                <p style={{ margin: 0, color: '#6b7280', fontFamily: 'Poppins, sans-serif', fontSize: '0.82rem' }}>
+                  {temasSeleccionados.length > 0
+                    ? `${temasSeleccionados.length} temas seleccionados · ${preguntasFiltradas.length} preguntas disponibles`
+                    : 'Selecciona al menos un tema para habilitar las dificultades.'}
+                </p>
+              </>
+            )}
           </div>
 
           <div style={{
@@ -81,11 +183,11 @@ const TestPreguntas: React.FC = () => {
             gap: '1rem',
           }}>
             {DIFICULTADES.map((dificultad) => {
-              const disponible = preguntas.length >= dificultad.cantidad;
+              const disponible = preguntasFiltradas.length >= dificultad.cantidad;
               return (
                 <button
                   key={dificultad.id}
-                        onClick={() => iniciarTest(dificultad)}
+                  onClick={() => iniciarTest(dificultad)}
                   disabled={!disponible || loading}
                   style={{
                     background: 'white', border: `2px solid ${dificultad.color}`, borderRadius: '1rem',
@@ -106,7 +208,7 @@ const TestPreguntas: React.FC = () => {
                     {dificultad.descripcion}
                   </p>
                   <div style={{ fontSize: '0.82rem', color: disponible ? dificultad.accent : '#6b7280', fontFamily: 'Poppins, sans-serif', fontWeight: 600 }}>
-                    {disponible ? 'Disponible' : `Necesitas al menos ${dificultad.cantidad} preguntas en el banco`}
+                    {disponible ? 'Disponible' : `Necesitas al menos ${dificultad.cantidad} preguntas en los temas seleccionados`}
                   </div>
                 </button>
               );
@@ -140,6 +242,7 @@ const TestPreguntas: React.FC = () => {
               dificultadId: dificultadSeleccionada.id,
               dificultadTitulo: dificultadSeleccionada.titulo,
               cantidadPreguntas: dificultadSeleccionada.cantidad,
+              temas: temasSeleccionados,
             }
           : undefined,
       },
