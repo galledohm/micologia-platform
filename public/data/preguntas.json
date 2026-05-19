@@ -779,6 +779,253 @@
       "respuestaCorrecta": "d",
       "tema": "Unidad 3",
       "fuente": "Cuestionario 3"
+    },
+    {
+      "id": "preg_061",
+      "texto": "En relación a la importancia de los hongos en el desarrollo rural:",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos no tienen prácticamente importancia en el desarrollo rural, ya que hay aprovechamientos como el maderero, el ganadero y el agrícola mucho más rentables." },
+        { "id": "b", "texto": "Es muy fácil estimar la producción de hongos en un determinado entorno forestal ya que apenas influyen factores." },
+        { "id": "c", "texto": "El aprovechamiento de hongos en zonas rurales incluye la venta y comercialización de setas silvestres comestibles, las actividades de micoturismo (jornadas micológicas o micogastronómicas), la venta de permisos de recolección en zonas reguladas y las actividades de silvicultura." },
+        { "id": "d", "texto": "En el mundo rural hay numerosos estudios de productividad de setas comestibles en zonas rurales." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_062",
+      "texto": "En relación a la fundamentación básica de la silvicultura fúngica:",
+      "opciones": [
+        { "id": "a", "texto": "Las cortas de regeneración son tratamientos silvícolas que consisten en la eliminación parcial o total de la masa forestal para favorecer el desarrollo de arbolado de forma natural o artificial." },
+        { "id": "b", "texto": "Las principales cortas de mejora son las podas y desbroces." },
+        { "id": "c", "texto": "Las principales formas de la eliminación de matorrales son las claras y los clareos." },
+        { "id": "d", "texto": "En las cortas de regeneración se consideran practicas recomendadas el corte a hecho o a matarrasa, el labrado posterior y destoconado." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_063",
+      "texto": "En relación a las podas, desbroces y quemas:",
+      "opciones": [
+        { "id": "a", "texto": "La quema es la eliminación del matorral mediante una quema controlada con un patrón de ignición en determinadas condiciones ambientales (otoño o invierno) para favorecer la recolección de setas y la regeneración del matorral senescente." },
+        { "id": "b", "texto": "La poda son los cortes de ramas de árboles para mejorar producción de hongos, debido a la mayor insolación del suelo, humedad y aireación." },
+        { "id": "c", "texto": "El desbroce es la eliminación del matorral de forma mecánica o manual para favorecer la recolección de setas y la regeneración del matorral senescente." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_064",
+      "texto": "En relación a la normativa de recolección de setas y trufas silvestres en Castilla-La Mancha:",
+      "opciones": [
+        { "id": "a", "texto": "El cupo de recolección episódica en Castilla-La Mancha es de 3 kg de setas por persona y día." },
+        { "id": "b", "texto": "En Castilla-La Mancha está permitida la recolección de especies de setas no recolectables sin autorización." },
+        { "id": "c", "texto": "El aprovechamiento episódico realizado en Castilla-La Mancha tiene un cupo de recolección de 5 Kg de especies de setas recolectables por persona y día, que no está permitido su comercialización y no es necesario ningún permiso." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_065",
+      "texto": "En relación a la normativa de recolección de setas y trufas silvestres en Castilla-La Mancha (II):",
+      "opciones": [
+        { "id": "a", "texto": "En Castilla-La Mancha está permitido la recolección de setas por la noche mediante frontales homologados." },
+        { "id": "b", "texto": "En Castilla-La Mancha se permite recolectar setas en recipientes no aireados." },
+        { "id": "c", "texto": "En Castilla-La Mancha se prohíbe el uso de hoces, rastrillos, azadas, picos y palas." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_066",
+      "texto": "En relación a la normativa de recolección de setas y trufas silvestres en Castilla-La Mancha (III):",
+      "opciones": [
+        { "id": "a", "texto": "Para la recolección de trufas silvestres no existe una normativa en Castilla-La Mancha, por lo que se rige por las normativas estatales." },
+        { "id": "b", "texto": "En Castilla-La Mancha está permitida la recolección episódica de 5 Kg de trufas por persona y día en montes públicos que no sean acotados de trufas y montes privados siempre que se tenga el permiso del propietario." },
+        { "id": "c", "texto": "En Castilla-La Mancha está permitida la recolección de Tuber brumale y Tuber melanosporum del 1 de diciembre al 15 de marzo." },
+        { "id": "d", "texto": "La a y la c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_067",
+      "texto": "En relación a los terrenos acotados y parques micológicos:",
+      "opciones": [
+        { "id": "a", "texto": "Los Parques Micológicos son un conjunto de terrenos acotados de setas de un ámbito geográfico determinado destinados a servicios y productos micológicos destinados al recolector de setas para asegurar un aprovechamiento micológico sostenible." },
+        { "id": "b", "texto": "Los principales parques micológicos de Castilla-La Mancha se encuentran en la Serranía Alta de Cuenca, en el Alto Tajo y en la Sierra Norte de Guadalajara." },
+        { "id": "c", "texto": "Los terrenos acotados son montes de propiedad pública o privada que presentan regulado el aprovechamiento micológico que se encuentran bien señalizados y han sido declarados como tal en una legislación internacional." },
+        { "id": "d", "texto": "Todas las respuestas son correctas." }
+      ],
+      "respuestaCorrecta": "a",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_068",
+      "texto": "En relación a los terrenos acotados y parques micológicos (II):",
+      "opciones": [
+        { "id": "a", "texto": "En la provincia de Guadalajara los principales acotados se encuentran en la Sierra Norte de Guadalajara (ordenanzas municipales) en los términos municipales de Arbarcón, Cantalojas, Condemios de Arriba, Cogolludo, Galve de Sorbe, La Huerce, Tamajón y en el Acotado Micológico La Sierra-Alto Tajo que incluye Adobes, Alcoroches, Alustante, Checa, Chequilla, Megina, Motos, Peralejos de las truchas, Pinilla de Molina, Piqueras, Terzaga, Tordellego, Tordesilos y Traíd." },
+        { "id": "b", "texto": "En la provincia de Cuenca los principales acotados se encuentran en la Serranía Alta de Cuenca (ordenanzas municipales): Huerta del Marquesado, Salvacañete, Tragacete, Valdemeca." },
+        { "id": "c", "texto": "En la provincia de Ciudad Real los principales acotados son Coto municipal (ordenanza municipal) en Fuencaliente y Puebla de Don Rodrigo." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_069",
+      "texto": "En relación a los espacios naturales protegidos de Castilla-La Mancha (II):",
+      "opciones": [
+        { "id": "a", "texto": "En la provincia de Guadalajara hay 3 parques naturales: Parque Natural del Alto Tajo, Parque Natural de la Sierra Norte de Guadalajara y el Parque Natural del Barranco del río Dulce." },
+        { "id": "b", "texto": "En la provincia de Guadalajara hay espacios naturales protegidos como parques naturales, monumentos naturales, paisajes protegidos y reservas fluviales." },
+        { "id": "c", "texto": "La recolección de setas en espacios naturales protegidos en Castilla-La Mancha pueden tener regulaciones específicas y prohibiciones específicas de recolección de setas que se deben consultar en el plan de protección de cada espacio aunque generalmente presenta un límite de recolección episódica de 5 kg/persona y día, pudiendo ser modificados por un plan de aprovechamiento micológico de Ayuntamientos o Juntas Vecinales." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_070",
+      "texto": "En relación a las zonas de especial protección en Castilla-La Mancha:",
+      "opciones": [
+        { "id": "a", "texto": "En Castilla-La Mancha hay numerosas reservas micológicas y microrreservas de hongos para garantizar la sostenibilidad del recurso micológico en zonas de alto aprovechamiento micológico y la conservación de hábitats relictos de hongos (Turberas, tremedales, abedulares, abetales)." },
+        { "id": "b", "texto": "La recolección de setas se puede realizar en zonas de especial protección como las zonas de especial protección de las aves (ZEPA), zonas de especial conservación (ZEC), humedales RAMSAR y las microrreservas de flora, ya que se considera un aprovechamiento compatible con la conservación siempre que se realice en terrenos con un plan de aprovechamiento regulado y no haya ninguna legislación que lo prohíba." },
+        { "id": "c", "texto": "En Castilla-La Mancha no hay ninguna microrreserva de flora." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son incorrectas." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_071",
+      "texto": "En relación a los antecedentes de listas rojas en España:",
+      "opciones": [
+        { "id": "a", "texto": "La Ley de Conservación de los Espacios Naturales y de la Flora y Fauna Silvestre (1989) solamente catalogaba especies amenazadas de flora y fauna en categorías: En peligro de extinción, Sensibles a la alteración de su hábitat, Vulnerables y De interés especial." },
+        { "id": "b", "texto": "La Ley de Conservación de los Espacios Naturales y de la Flora y Fauna Silvestre (1989) no tuvo en cuenta los hongos para su conservación y protección." },
+        { "id": "c", "texto": "Los principales problemas para catalogar hongos para su conservación y protección son el gran número de especies, la dificultad de determinación de las especies, la poca durabilidad de los cuerpos fructíferos y que pueden pasar desapercibidos durante años si no se dan las condiciones para su fructificación y que los inventarios micológicos requieren un trabajo exhaustivo." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_072",
+      "texto": "En relación a las listas rojas de hongos:",
+      "opciones": [
+        { "id": "a", "texto": "Las listas rojas de hongos tienen valor informativo y legislativo." },
+        { "id": "b", "texto": "Las listas rojas de hongos son el conjunto de hongos cuya existencia o supervivencia está comprometida por las actividades humanas o por otro tipo de amenazas." },
+        { "id": "c", "texto": "Las especies de hongos que aparecen en las listas rojas están protegidas de forma legislativa." },
+        { "id": "d", "texto": "Los principales criterios de selección de las especies para estar catalogadas en las listas rojas son especies muy abundantes que se encuentren en un número elevado de lugares, especies que hayan empezado a aumentar su población en los últimos años y especies de frecuencia variable ligadas a biotopos no amenazados." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_073",
+      "texto": "En relación a la iniciativa de lista roja global de hongos (The global fungal red list iniciative):",
+      "opciones": [
+        { "id": "a", "texto": "En la iniciativa de lista roja global de hongos solo pueden participar micólogos expertos para proponer especies amenazadas." },
+        { "id": "b", "texto": "La iniciativa de lista roja global de hongos es de acceso libre y de participación ciudadana." },
+        { "id": "c", "texto": "Las especies presentes en la iniciativa de lista roja global de hongos tienen prohibida su recolección en todos los países del mundo, conllevando su recolección sanciones bastante graves." },
+        { "id": "d", "texto": "La a y la c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_074",
+      "texto": "En relación a las listas rojas europeas:",
+      "opciones": [
+        { "id": "a", "texto": "En el European Council for Conservation of Fungi (ECCF) solamente se establecen 10 especies de hongos amenazados." },
+        { "id": "b", "texto": "En la II Reunión del Consejo Europeo para la Conservación de los Hongos celebrada en Vilm (Alemania) (1992) solamente se establecen 10 especies de hongos amenazados." },
+        { "id": "c", "texto": "No se ha establecido nunca una lista roja de especies de hongos a nivel europeo." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_075",
+      "texto": "En relación a la propuesta de Lista Roja de Hongos a proteger en la Península Ibérica:",
+      "opciones": [
+        { "id": "a", "texto": "En la lista roja de hongos a proteger en la Península Ibérica se encuentran catalogadas 100 especies amenazadas." },
+        { "id": "b", "texto": "La lista roja de hongos a proteger en la Península Ibérica es una propuesta definitiva, que tiene valor legislativo." },
+        { "id": "c", "texto": "La lista roja de hongos a proteger en la Península Ibérica se estableció en el año 2010 en una reunión de grupo de micólogos ibéricos en Madrid." },
+        { "id": "d", "texto": "Los principales criterios de selección de las especies de la lista roja de hongos a proteger en la Península Ibérica fueron especies comunes pero con alarmante reducción de sus poblaciones, especies con distribución restrictiva, especies con poblaciones pequeñas y en reducción y especies con poblaciones muy pequeñas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_076",
+      "texto": "En relación al Atlas y Libro Rojo de los Hongos de la Península Ibérica:",
+      "opciones": [
+        { "id": "a", "texto": "El Atlas y Libro Rojo de los Hongos de la Península Ibérica ha sido creado por la Sociedad Ibérica de Micología (S.I.M.)." },
+        { "id": "b", "texto": "El Atlas y Libro Rojo de los Hongos de la Península Ibérica recoge solamente las mismas especies que la Propuesta de Lista Roja de Hongos a proteger en la Península Ibérica." },
+        { "id": "c", "texto": "Algunas especies catalogadas como especies amenazadas en el Atlas y Libro Rojo de los Hongos de la Península Ibérica se encuentran en Castilla-La Mancha: Camarophyllus colemmanianus, Entoloma madidum, Floccularia luteovirens, Lenzitopsis oxycedri, Picipes rhizophilus y Xeromphalina junipericola." },
+        { "id": "d", "texto": "La a y la c son las respuestas correctas." }
+      ],
+      "respuestaCorrecta": "d",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_077",
+      "texto": "En relación a la protección legislativa de hongos amenazados:",
+      "opciones": [
+        { "id": "a", "texto": "En Castilla-La Mancha existe una lista de especies de hongos amenazadas que están protegidas de forma legislativa." },
+        { "id": "b", "texto": "En España en ninguna comunidad autónoma hay una lista de especies de hongos amenazadas que estén protegidas de forma legislativa." },
+        { "id": "c", "texto": "En España solo hay una lista de especies de hongos amenazadas que estén protegidas de forma legislativa en Andalucía y Cataluña." },
+        { "id": "d", "texto": "Ninguna de las respuestas anteriores es correcta." }
+      ],
+      "respuestaCorrecta": "c",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_078",
+      "texto": "En relación a la problemática de los hongos exóticos:",
+      "opciones": [
+        { "id": "a", "texto": "Los hongos de la grafiosis (Ophiostoma ulmi y Ophiostoma novo-ulmi) están catalogados en el catálogo español de especies exóticas invasoras." },
+        { "id": "b", "texto": "El hongo quitrido de los anfibios (Batrachochytrichium dendrobatidis) es el único hongo catalogado en el catálogo español de especies exóticas invasoras." },
+        { "id": "c", "texto": "España no tiene ningún catálogo ni lista negra de especies exóticas invasoras." },
+        { "id": "d", "texto": "Todas las respuestas anteriores son correctas." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
+    },
+    {
+      "id": "preg_079",
+      "texto": "En relación a la problemática de los hongos exóticos (II):",
+      "opciones": [
+        { "id": "a", "texto": "La mayoría de especies micorrícicas de hongos que aparecen en repoblaciones de árboles exóticos se consideran especies exóticas invasoras." },
+        { "id": "b", "texto": "El parasol de láminas verdes (Chlorophyllum molybdites) es una especie de hongo exótico invasor que ha colonizado en la región mediterránea numerosas zonas urbanas de parques y jardines, algunas zonas de cultivo y algunas dunas litorales de Andalucía, Cataluña y Extremadura." },
+        { "id": "c", "texto": "Los hongos exóticos invasores son aquellos que NO colonizan los hábitats locales, por lo que no desplazan a las especies autóctonas." },
+        { "id": "d", "texto": "Buenos ejemplos de especies exóticas invasoras son Gomphidius maculatus, Suillus grevillei y Suillus viscidus que aparecen en las repoblaciones de abeto de Douglas (Pseudotsuga menziesii)." }
+      ],
+      "respuestaCorrecta": "b",
+      "tema": "Unidad 4",
+      "fuente": "Cuestionario 4"
     }
   ]
 }
